@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Калькулятор пересчёта веса метизной продукции в количество поштучно и наоборт.">
+  <link rel="icon" type="image/png" href="/img/icon.png"">
+  <link rel="alternate" href="#" hreflang="ru-UA"> 
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="/fons/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <a name='headerBoss'></a>
+    <div class="invert conteiner-heder">
+      <div class="lain-top ">
+        <!-- всплывет поиск -->
+        <div class="wrap">
+          <!--Lain-top -->
+          <div class="logo"><span>ДПР</span></div>
+           
+          <div class="phon-top">(+380) 67 566 38 10</div>
+          <a href="#"><i class="fa fa-bars"></i></a>
+          <!-- появлется меню -->
+          <nav class="min-nav-heder ">
+            <a href="/ru/"> главная </a><br>
+            <a href="/ru/pages/about-ru.html"> о нас </a><br>
+            <a href="/seertificatt.pdf"> сертифиикат диллера</a><br>
+            <a href="/Catalog_prod.pdf"> каталог продукции </a><br>
+            <a href="/ru/#contact"> контакты </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="s-about">
+      <div class="wrap">
+        <div class="cont-calck">
+          <h2>Калькулятор</h2>
+          <div class="cont-wind">
+            <div class="wind-calck">
+              <span id="rezul"></span>
+            </div>
+          </div>
+          <div class="calck-wrap">
+            <div class="calck-menu">
+              <div class="c-menu-wrap">
+                <ul>
+                  <li class="c-menu" data-cl=".gwB">
+                    <p>Болты</p>
+                  </li>
+                  <li class="c-menu" data-cl=".gwG">
+                    <p>Гайки</p>
+                  </li>
+                  <li class="c-menu" data-cl="">
+                    <p>Шайбы</p>
+                  </li>
+                  <li class="c-menu" data-cl="">
+                    <p>Гровер</p>
+                  </li>
+                  <li class="c-menu" data-cl="">
+                    <p>заклёпки</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="gost-wrap gwB">
+                <ul>
+                  <li class="gost" data-cl=".saze-bolt7805">
+                    <p>ГОСТ 7805 (7798),<br>DIN 933,<br>DIN 931</p>
+                  </li>
+                  <li class="gost" data-cl=".saze-bolt912">
+                    <p>DIN 912</p>
+                  </li>
+                  <li class="gost" data-cl=".saze-bolt52644">
+                    <p>ГОСТ Р 52644-2006</p></li>
+                  <!-- <li class="gost"></li>
+                  <li class="gost"></li> -->
+                </ul>
+              </div>
+              <!-- -------------------------------- -->
+              <div class="saze-wrap saze-bolt7805">
+                <ul>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M6">M6</li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M8">M8 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M10">M10 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M12">M12 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M14">M14 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M16">M16 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M18">M18 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M20">M20 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M22">M22 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M24">M24 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M27">M27 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M30">M30 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M36">M36 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M42">M42 </li>
+                  <li class="saze" data-cl=".sazeL-bolt7805_M48">M48 </li>
+                </ul>
+              </div>
+              <!-- -------------------------- -->
+              <div class="sazL-wrap sazeL-bolt7805_M6">
+                <ul>
+                  <li class="sazeL" data-vess="4,712">10</li>
+                  <li class="sazeL" data-vess="5,118">12</li>
+                  <li class="sazeL" data-vess="5,524">14</li>
+                  <li class="sazeL" data-vess="5,93">16</li>
+                  <li class="sazeL" data-vess="6,742">20</li>
+                  <li class="sazeL" data-vess="7,871">25</li>
+                  <li class="sazeL" data-vess="8,981">30</li>
+                  <li class="sazeL" data-vess="10,09">35</li>
+                  <li class="sazeL" data-vess="11,2">40</li>
+                  <li class="sazeL" data-vess="12,31">45</li>
+                  <li class="sazeL" data-vess="13,42">50</li>
+                  <li class="sazeL" data-vess="14,53">55</li>
+                  <li class="sazeL" data-vess="15,64">60</li>
+                  <li class="sazeL" data-vess="16,76">65</li>
+                  <li class="sazeL" data-vess="17,87">70</li>
+                  <li class="sazeL" data-vess="18,98">75</li>
+                  <li class="sazeL" data-vess="20,09">80</li>
+                  <li class="sazeL" data-vess="21,2">85</li>
+                  <li class="sazeL" data-vess="22,31">90</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap sazeL-bolt7805_M8">
+                <ul>
+                  <li class="sazeL" data-vess="9,394">10</li>
+                  <li class="sazeL" data-vess="10,85">14</li>
+                  <li class="sazeL" data-vess="11,8">16</li>
+                  <li class="sazeL" data-vess="13,02">20</li>
+                  <li class="sazeL" data-vess="14,84">25</li>
+                  <li class="sazeL" data-vess="17,12">30</li>
+                  <li class="sazeL" data-vess="19,09">35</li>
+                  <li class="sazeL" data-vess="21,07">40</li>
+                  <li class="sazeL" data-vess="23,04">45</li>
+                  <li class="sazeL" data-vess="25,02">50</li>
+                  <li class="sazeL" data-vess="26,990">55</li>
+                  <li class="sazeL" data-vess="28,970">60</li>
+                  <li class="sazeL" data-vess="30,940">65</li>
+                  <li class="sazeL" data-vess="32,910">70</li>
+                  <li class="sazeL" data-vess="34,890">75</li>
+                  <li class="sazeL" data-vess="36,860">80</li>
+                  <li class="sazeL" data-vess="38,840">85</li>
+                  <li class="sazeL" data-vess="40,810">90</li>
+                  <li class="sazeL" data-vess="42,790">95</li>
+                  <li class="sazeL" data-vess="44,760">100</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap sazeL-bolt7805_M10">
+                <ul>
+                  <li class="sazeL" data-vess="16,68">10</li>
+                  <li class="sazeL" data-vess="18,96">14</li>
+                  <li class="sazeL" data-vess="20,10">16</li>
+                  <li class="sazeL" data-vess="22,37">20</li>
+                  <li class="sazeL" data-vess="25,22">25</li>
+                  <li class="sazeL" data-vess="28,52">30</li>
+                  <li class="sazeL" data-vess="31,28">35</li>
+                  <li class="sazeL" data-vess="34,36">40</li>
+                  <li class="sazeL" data-vess="37,45">45</li>
+                  <li class="sazeL" data-vess="40,53">50</li>
+                  <li class="sazeL" data-vess="43,62">55</li>
+                  <li class="sazeL" data-vess="46,70">60</li>
+                  <li class="sazeL" data-vess="49,79">65</li>
+                  <li class="sazeL" data-vess="52,87">70</li>
+                  <li class="sazeL" data-vess="55,96">75</li>
+                  <li class="sazeL" data-vess="59,04">80</li>
+                  <li class="sazeL" data-vess="62,13">85</li>
+                  <li class="sazeL" data-vess="65,21">90</li>
+                  <li class="sazeL" data-vess="68,30">95</li>
+                  <li class="sazeL" data-vess="71,38">100</li>
+                  <li class="sazeL" data-vess="74,47">105</li>
+                  <li class="sazeL" data-vess="77,55">110</li>
+                  <li class="sazeL" data-vess="80,63">115</li>
+                  <li class="sazeL" data-vess="83,72">120</li>
+                  <li class="sazeL" data-vess="86,80">125</li>
+                  <li class="sazeL" data-vess="89,89">130</li>
+                  <li class="sazeL" data-vess="96,06">140</li>
+                  <li class="sazeL" data-vess="102,18">150</li>
+                  <li class="sazeL" data-vess="108,38">160</li>
+                  <li class="sazeL" data-vess="114,58">170</li>
+                  <li class="sazeL" data-vess="120,68">180</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap  sazeL-bolt7805_M12">
+                <ul>
+                  <li class="sazeL" data-vess="27,89">14</li>
+                  <li class="sazeL" data-vess="29,48">16</li>
+                  <li class="sazeL" data-vess="32,76">20</li>
+                  <li class="sazeL" data-vess="36,86">25</li>
+                  <li class="sazeL" data-vess="40,96">30</li>
+                  <li class="sazeL" data-vess="45,34">35</li>
+                  <li class="sazeL" data-vess="49,78">40</li>
+                  <li class="sazeL" data-vess="54,22">45</li>
+                  <li class="sazeL" data-vess="58,67">50</li>
+                  <li class="sazeL" data-vess="63,11">55</li>
+                  <li class="sazeL" data-vess="67,55">60</li>
+                  <li class="sazeL" data-vess="71,99">65</li>
+                  <li class="sazeL" data-vess="76,44">70</li>
+                  <li class="sazeL" data-vess="80,88">75</li>
+                  <li class="sazeL" data-vess="85,33">80</li>
+                  <li class="sazeL" data-vess="89,77">85</li>
+                  <li class="sazeL" data-vess="94,20">90</li>
+                  <li class="sazeL" data-vess="98,64">95</li>
+                  <li class="sazeL" data-vess="103,10">100</li>
+                  <li class="sazeL" data-vess="107,50">105</li>
+                  <li class="sazeL" data-vess="112,00">110</li>
+                  <li class="sazeL" data-vess="116,40">115</li>
+                  <li class="sazeL" data-vess="120,90">120</li>
+                  <li class="sazeL" data-vess="125,30">125</li>
+                  <li class="sazeL" data-vess="129,70">130</li>
+                  <li class="sazeL" data-vess="138,60">140</li>
+                  <li class="sazeL" data-vess="147,50">150</li>
+                  <li class="sazeL" data-vess="156,40">160</li>
+                  <li class="sazeL" data-vess="165,30">170</li>
+                  <li class="sazeL" data-vess="174,20">180</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap sazeL-bolt7805_M14">
+                <ul>
+                  <li class="sazeL" data-vess="43,98">16</li>
+                  <li class="sazeL" data-vess="48,45">20</li>
+                  <li class="sazeL" data-vess="54,05">25</li>
+                  <li class="sazeL" data-vess="59,64">30</li>
+                  <li class="sazeL" data-vess="65,24">35</li>
+                  <li class="sazeL" data-vess="71,25">40</li>
+                  <li class="sazeL" data-vess="77,30">45</li>
+                  <li class="sazeL" data-vess="83,35">50</li>
+                  <li class="sazeL" data-vess="89,39">55</li>
+                  <li class="sazeL" data-vess="95,44">60</li>
+                  <li class="sazeL" data-vess="101,50">65</li>
+                  <li class="sazeL" data-vess="107,50">70</li>
+                  <li class="sazeL" data-vess="113,60">75</li>
+                  <li class="sazeL" data-vess="119,60">80</li>
+                  <li class="sazeL" data-vess="125,70">85</li>
+                  <li class="sazeL" data-vess="131,70">90</li>
+                  <li class="sazeL" data-vess="137,80">95</li>
+                  <li class="sazeL" data-vess="143,80">100</li>
+                  <li class="sazeL" data-vess="149,90">105</li>
+                  <li class="sazeL" data-vess="155,90">110</li>
+                  <li class="sazeL" data-vess="162,00">115</li>
+                  <li class="sazeL" data-vess="168,00">120</li>
+                  <li class="sazeL" data-vess="174,00">125</li>
+                  <li class="sazeL" data-vess="180,10">130</li>
+                  <li class="sazeL" data-vess="192,20">140</li>
+                  <li class="sazeL" data-vess="204,30">150</li>
+                  <li class="sazeL" data-vess="216,40">160</li>
+                  <li class="sazeL" data-vess="228,50">170</li>
+                  <li class="sazeL" data-vess="240,60">180</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap  sazeL-bolt7805_M16">
+                <ul>
+                  <li class="sazeL" data-vess="68,49">20</li>
+                  <li class="sazeL" data-vess="75,87">25</li>
+                  <li class="sazeL" data-vess="83,24">30</li>
+                  <li class="sazeL" data-vess="90,62">35</li>
+                  <li class="sazeL" data-vess="97,99">40</li>
+                  <li class="sazeL" data-vess="105,7">45</li>
+                  <li class="sazeL" data-vess="113,6">50</li>
+                  <li class="sazeL" data-vess="121,5">55</li>
+                  <li class="sazeL" data-vess="129,4">60</li>
+                  <li class="sazeL" data-vess="137,3">65</li>
+                  <li class="sazeL" data-vess="145,2">70</li>
+                  <li class="sazeL" data-vess="153,1">75</li>
+                  <li class="sazeL" data-vess="161">80</li>
+                  <li class="sazeL" data-vess="168,9">85</li>
+                  <li class="sazeL" data-vess="176,8">90</li>
+                  <li class="sazeL" data-vess="184,7">95</li>
+                  <li class="sazeL" data-vess="192,6">100</li>
+                  <li class="sazeL" data-vess="200,5">105</li>
+                  <li class="sazeL" data-vess="208,4">110</li>
+                  <li class="sazeL" data-vess="216,3">115</li>
+                  <li class="sazeL" data-vess="224,2">120</li>
+                  <li class="sazeL" data-vess="232,1">125</li>
+                  <li class="sazeL" data-vess="240">130</li>
+                  <li class="sazeL" data-vess="255,8">140</li>
+                  <li class="sazeL" data-vess="271,6">150</li>
+                  <li class="sazeL" data-vess="287,4">160</li>
+                  <li class="sazeL" data-vess="303,2">170</li>
+                  <li class="sazeL" data-vess="319,00">180</li>
+                  <li class="sazeL" data-vess="333,80">190</li>
+                  <li class="sazeL" data-vess="350,60">200</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap  sazeL-bolt7805_M18">
+                <ul>
+                  <li class="sazeL" data-vess="95,81">20</li>
+                  <li class="sazeL" data-vess="105,1">25</li>
+                  <li class="sazeL" data-vess="114,3">30</li>
+                  <li class="sazeL" data-vess="123,6">35</li>
+                  <li class="sazeL" data-vess="132,9">40</li>
+                  <li class="sazeL" data-vess="142,1">45</li>
+                  <li class="sazeL" data-vess="152,4">50</li>
+                  <li class="sazeL" data-vess="162,4">55</li>
+                  <li class="sazeL" data-vess="172,4">60</li>
+                  <li class="sazeL" data-vess="182,4">65</li>
+                  <li class="sazeL" data-vess="192,4">70</li>
+                  <li class="sazeL" data-vess="202,4">75</li>
+                  <li class="sazeL" data-vess="212,4">80</li>
+                  <li class="sazeL" data-vess="222,4">85</li>
+                  <li class="sazeL" data-vess="232,4">90</li>
+                  <li class="sazeL" data-vess="242,4">95</li>
+                  <li class="sazeL" data-vess="252,4">100</li>
+                  <li class="sazeL" data-vess="262,4">105</li>
+                  <li class="sazeL" data-vess="272,3">110</li>
+                  <li class="sazeL" data-vess="282,3">115</li>
+                  <li class="sazeL" data-vess="292,3">120</li>
+                  <li class="sazeL" data-vess="302,3">125</li>
+                  <li class="sazeL" data-vess="312,3">130</li>
+                  <li class="sazeL" data-vess="332,3">140</li>
+                  <li class="sazeL" data-vess="352,3">150</li>
+                  <li class="sazeL" data-vess="372,3">160</li>
+                  <li class="sazeL" data-vess="392,30">170</li>
+                  <li class="sazeL" data-vess="412,30">180</li>
+                  <li class="sazeL" data-vess="432,30">190</li>
+                  <li class="sazeL" data-vess="452,20">200</li>
+
+                </ul>
+              </div>
+
+              <div class="sazL-wrap sazeL-bolt7805_M20">
+                <ul>
+                  <li class="sazeL" data-vess="133,3">25</li>
+                  <li class="sazeL" data-vess="144,8">30</li>
+                  <li class="sazeL" data-vess="156,3">35</li>
+                  <li class="sazeL" data-vess="170,9">40</li>
+                  <li class="sazeL" data-vess="179,4">45</li>
+                  <li class="sazeL" data-vess="190,9">50</li>
+                  <li class="sazeL" data-vess="203,7">55</li>
+                  <li class="sazeL" data-vess="216,0">60</li>
+                  <li class="sazeL" data-vess="228,4">65</li>
+                  <li class="sazeL" data-vess="240,7">70</li>
+                  <li class="sazeL" data-vess="253,0">75</li>
+                  <li class="sazeL" data-vess="265,0">80</li>
+                  <li class="sazeL" data-vess="277,7">85</li>
+                  <li class="sazeL" data-vess="290,1">90</li>
+                  <li class="sazeL" data-vess="302,4">95</li>
+                  <li class="sazeL" data-vess="314,7">100</li>
+                  <li class="sazeL" data-vess="327,1">105</li>
+                  <li class="sazeL" data-vess="339,4">110</li>
+                  <li class="sazeL" data-vess="351,8">115</li>
+                  <li class="sazeL" data-vess="364,1">120</li>
+                  <li class="sazeL" data-vess="376,4">125</li>
+                  <li class="sazeL" data-vess="388,8">130</li>
+                  <li class="sazeL" data-vess="413,5">140</li>
+                  <li class="sazeL" data-vess="438,1">150</li>
+                  <li class="sazeL" data-vess="462,8">160</li>
+                  <li class="sazeL" data-vess="487,5">170</li>
+                  <li class="sazeL" data-vess="512,2">180</li>
+                  <li class="sazeL" data-vess="536,9">190</li>
+                  <li class="sazeL" data-vess="561,5">200</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap sazeL-bolt7805_M22">
+                <ul>
+                  <li class="sazeL" data-vess="193,0">30</li>
+                  <li class="sazeL" data-vess="207,0">35</li>
+                  <li class="sazeL" data-vess="221,0">40</li>
+                  <li class="sazeL" data-vess="235,0">45</li>
+                  <li class="sazeL" data-vess="249,0">50</li>
+                  <li class="sazeL" data-vess="250,7">55</li>
+                  <li class="sazeL" data-vess="266,5">60</li>
+                  <li class="sazeL" data-vess="281,4">65</li>
+                  <li class="sazeL" data-vess="296,4">70</li>
+                  <li class="sazeL" data-vess="311,3">75</li>
+                  <li class="sazeL" data-vess="326,2">80</li>
+                  <li class="sazeL" data-vess="341,2">85</li>
+                  <li class="sazeL" data-vess="356,1">90</li>
+                  <li class="sazeL" data-vess="371">95</li>
+                  <li class="sazeL" data-vess="385,9">100</li>
+                  <li class="sazeL" data-vess="400,9">105</li>
+                  <li class="sazeL" data-vess="415,8">110</li>
+                  <li class="sazeL" data-vess="430,7">115</li>
+                  <li class="sazeL" data-vess="445,7">120</li>
+                  <li class="sazeL" data-vess="460,6">125</li>
+                  <li class="sazeL" data-vess="475,5">130</li>
+                  <li class="sazeL" data-vess="505,4">140</li>
+                  <li class="sazeL" data-vess="535,2">150</li>
+                  <li class="sazeL" data-vess="565,1">160</li>
+                  <li class="sazeL" data-vess="595">170</li>
+                  <li class="sazeL" data-vess="624,8">180</li>
+                  <li class="sazeL" data-vess="654,7">190</li>
+                  <li class="sazeL" data-vess="684,6">200</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap  sazeL-bolt7805_M24">
+                <ul>
+                  <li class="sazeL" data-vess="246,9">35</li>
+                  <li class="sazeL" data-vess="263,5">40</li>
+                  <li class="sazeL" data-vess="280,1">45</li>
+                  <li class="sazeL" data-vess="296,7">50</li>
+                  <li class="sazeL" data-vess="313,3">55</li>
+                  <li class="sazeL" data-vess="329,9">60</li>
+                  <li class="sazeL" data-vess="348,8">65</li>
+                  <li class="sazeL" data-vess="366,5">70</li>
+                  <li class="sazeL" data-vess="384,3">75</li>
+                  <li class="sazeL" data-vess="402,1">80</li>
+                  <li class="sazeL" data-vess="419,8">85</li>
+                  <li class="sazeL" data-vess="437,6">90</li>
+                  <li class="sazeL" data-vess="455,4">95</li>
+                  <li class="sazeL" data-vess="473,2">100</li>
+                  <li class="sazeL" data-vess="490,9">105</li>
+                  <li class="sazeL" data-vess="508,7">110</li>
+                  <li class="sazeL" data-vess="526,5">115</li>
+                  <li class="sazeL" data-vess="544,2">120</li>
+                  <li class="sazeL" data-vess="562">125</li>
+                  <li class="sazeL" data-vess="579,8">130</li>
+                  <li class="sazeL" data-vess="615,3">140</li>
+                  <li class="sazeL" data-vess="650,8">150</li>
+                  <li class="sazeL" data-vess="686,4">160</li>
+                  <li class="sazeL" data-vess="721,9">170</li>
+                  <li class="sazeL" data-vess="757,5">180</li>
+                  <li class="sazeL" data-vess="793,0">190</li>
+                  <li class="sazeL" data-vess="828,6">200</li>
+                  <li class="sazeL" data-vess="899,6">220</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap sazeL-bolt7805_M27">
+                <ul>
+                  <li class="sazeL" data-vess="340,6">35</li>
+                  <li class="sazeL" data-vess="361,8">40</li>
+                  <li class="sazeL" data-vess="373">45</li>
+                  <li class="sazeL" data-vess="404,1">50</li>
+                  <li class="sazeL" data-vess="425,3">55</li>
+                  <li class="sazeL" data-vess="446,5">60</li>
+                  <li class="sazeL" data-vess="467,7">65</li>
+                  <li class="sazeL" data-vess="491,1">70</li>
+                  <li class="sazeL" data-vess="513,6">75</li>
+                  <li class="sazeL" data-vess="536,1">80</li>
+                  <li class="sazeL" data-vess="558,6">85</li>
+                  <li class="sazeL" data-vess="581">90</li>
+                  <li class="sazeL" data-vess="603,5">95</li>
+                  <li class="sazeL" data-vess="626">100</li>
+                  <li class="sazeL" data-vess="648,5">105</li>
+                  <li class="sazeL" data-vess="671">110</li>
+                  <li class="sazeL" data-vess="693,5">115</li>
+                  <li class="sazeL" data-vess="716">120</li>
+                  <li class="sazeL" data-vess="738,5">125</li>
+                  <li class="sazeL" data-vess="761">130</li>
+                  <li class="sazeL" data-vess="806">140</li>
+                  <li class="sazeL" data-vess="850,1">150</li>
+                  <li class="sazeL" data-vess="895,9">160</li>
+                  <li class="sazeL" data-vess="940,9">170</li>
+                  <li class="sazeL" data-vess="985,9">180</li>
+                  <li class="sazeL" data-vess="1031,0">190</li>
+                  <li class="sazeL" data-vess="1076,0">200</li>
+                  <li class="sazeL" data-vess="1166,0">220</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap  sazeL-bolt7805_M30">
+                <ul>
+                  <li class="sazeL" data-vess="474,8">40</li>
+                  <li class="sazeL" data-vess="500,9">45</li>
+                  <li class="sazeL" data-vess="526,9">50</li>
+                  <li class="sazeL" data-vess="553,0">55</li>
+                  <li class="sazeL" data-vess="579,0">60</li>
+                  <li class="sazeL" data-vess="605,1">65</li>
+                  <li class="sazeL" data-vess="631,1">70</li>
+                  <li class="sazeL" data-vess="659,7">75</li>
+                  <li class="sazeL" data-vess="687,5">80</li>
+                  <li class="sazeL" data-vess="715,2">85</li>
+                  <li class="sazeL" data-vess="743,0">90</li>
+                  <li class="sazeL" data-vess="770,8">95</li>
+                  <li class="sazeL" data-vess="798,5">100</li>
+                  <li class="sazeL" data-vess="826,3">105</li>
+                  <li class="sazeL" data-vess="854,1">110</li>
+                  <li class="sazeL" data-vess="881,8">115</li>
+                  <li class="sazeL" data-vess="909,6">120</li>
+                  <li class="sazeL" data-vess="937,4">125</li>
+                  <li class="sazeL" data-vess="965,2">130</li>
+                  <li class="sazeL" data-vess="1021,0">140</li>
+                  <li class="sazeL" data-vess="1076,0">150</li>
+                  <li class="sazeL" data-vess="1132,0">160</li>
+                  <li class="sazeL" data-vess="1188,0">170</li>
+                  <li class="sazeL" data-vess="1243,0">180</li>
+                  <li class="sazeL" data-vess="1299,0">190</li>
+                  <li class="sazeL" data-vess="1354,0">200</li>
+                  <li class="sazeL" data-vess="1465,0">220</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap sazeL-bolt7805_M36">
+                <ul>
+                  <li class="sazeL" data-vess="834,5">50</li>
+                  <li class="sazeL" data-vess="872,1">55</li>
+                  <li class="sazeL" data-vess="909,8">60</li>
+                  <li class="sazeL" data-vess="947,4">65</li>
+                  <li class="sazeL" data-vess="985,0">70</li>
+                  <li class="sazeL" data-vess="1023,0">75</li>
+                  <li class="sazeL" data-vess="1061,0">80</li>
+                  <li class="sazeL" data-vess="1098,0">85</li>
+                  <li class="sazeL" data-vess="1141,0">90</li>
+                  <li class="sazeL" data-vess="1181,0">95</li>
+                  <li class="sazeL" data-vess="1221,0">100</li>
+                  <li class="sazeL" data-vess="1261,0">105</li>
+                  <li class="sazeL" data-vess="1301,0">110</li>
+                  <li class="sazeL" data-vess="1341,0">115</li>
+                  <li class="sazeL" data-vess="1381,0">120</li>
+                  <li class="sazeL" data-vess="1421,0">125</li>
+                  <li class="sazeL" data-vess="1461,0">130</li>
+                  <li class="sazeL" data-vess="1541,0">140</li>
+                  <li class="sazeL" data-vess="1621,0">150</li>
+                  <li class="sazeL" data-vess="1701,0">160</li>
+                  <li class="sazeL" data-vess="1780,0">170</li>
+                  <li class="sazeL" data-vess="1860,0">180</li>
+                  <li class="sazeL" data-vess="1940,0">190</li>
+                  <li class="sazeL" data-vess="2020,0">200</li>
+                  <li class="sazeL" data-vess="2180,0">220</li>
+                  <li class="sazeL" data-vess="2340,0">240</li>
+                  <li class="sazeL" data-vess="2500,0">260</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap sazeL-bolt7805_M42">
+                <ul>
+                  <li class="sazeL" data-vess="1304">55</li>
+                  <li class="sazeL" data-vess="1356">60</li>
+                  <li class="sazeL" data-vess="1407">65</li>
+                  <li class="sazeL" data-vess="1458">70</li>
+                  <li class="sazeL" data-vess="1509">75</li>
+                  <li class="sazeL" data-vess="1561">80</li>
+                  <li class="sazeL" data-vess="1612">85</li>
+                  <li class="sazeL" data-vess="1663">90</li>
+                  <li class="sazeL" data-vess="1715">95</li>
+                  <li class="sazeL" data-vess="1766">100</li>
+                  <li class="sazeL" data-vess="1826">105</li>
+                  <li class="sazeL" data-vess="1880">110</li>
+                  <li class="sazeL" data-vess="1934">115</li>
+                  <li class="sazeL" data-vess="1989">120</li>
+                  <li class="sazeL" data-vess="2043">125</li>
+                  <li class="sazeL" data-vess="2098">130</li>
+                  <li class="sazeL" data-vess="2207">140</li>
+                  <li class="sazeL" data-vess="2315">150</li>
+                  <li class="sazeL" data-vess="2424">160</li>
+                  <li class="sazeL" data-vess="2533">170</li>
+                  <li class="sazeL" data-vess="2642">180</li>
+                  <li class="sazeL" data-vess="2751">190</li>
+                  <li class="sazeL" data-vess="2860">200</li>
+                  <li class="sazeL" data-vess="3077">220</li>
+                  <li class="sazeL" data-vess="3295">240</li>
+                  <li class="sazeL" data-vess="3513">260</li>
+                </ul>
+              </div>
+
+              <div class="sazL-wrap sazeL-bolt7805_M48">
+                <ul>
+                  <li class="sazeL" data-vess="2009">65</li>
+                  <li class="sazeL" data-vess="2076">70</li>
+                  <li class="sazeL" data-vess="2143">75</li>
+                  <li class="sazeL" data-vess="2211">80</li>
+                  <li class="sazeL" data-vess="2278">85</li>
+                  <li class="sazeL" data-vess="2345">90</li>
+                  <li class="sazeL" data-vess="2412">95</li>
+                  <li class="sazeL" data-vess="2479">100</li>
+                  <li class="sazeL" data-vess="2546">105</li>
+                  <li class="sazeL" data-vess="2614">110</li>
+                  <li class="sazeL" data-vess="2690">115</li>
+                  <li class="sazeL" data-vess="2760">120</li>
+                  <li class="sazeL" data-vess="2760">125</li>
+                  <li class="sazeL" data-vess="2903">130</li>
+                  <li class="sazeL" data-vess="3045">140</li>
+                  <li class="sazeL" data-vess="3187">150</li>
+                  <li class="sazeL" data-vess="3329">160</li>
+                  <li class="sazeL" data-vess="3471">170</li>
+                  <li class="sazeL" data-vess="3614">180</li>
+                  <li class="sazeL" data-vess="3756">190</li>
+                  <li class="sazeL" data-vess="3898">200</li>
+                  <li class="sazeL" data-vess="4182">220</li>
+                  <li class="sazeL" data-vess="4466">240</li>
+                  <li class="sazeL" data-vess="4751">260</li>
+                </ul>
+              </div>
+              <!-- -----------------------din912------------- -->
+              <div class="saze-wrap saze-bolt912">
+                <ul>
+                  <li class="saze" data-cl=".sazeL-bolt912_M6">M6</li>
+                  <li class="saze" data-cl=".sazeL-bolt912_M8">M8 </li>
+                  <li class="saze" data-cl=".sazeL-bolt912_M10">M10 </li>
+                  <li class="saze" data-cl=".sazeL-bolt912_M12">M12 </li>
+                  <li class="saze" data-cl=".sazeL-bolt912_M14">M14 </li>
+                  <li class="saze" data-cl=".sazeL-bolt912_M16">M16 </li>
+                  <li class="saze" data-cl=".sazeL-bolt912_M18">M18 </li>
+                  <li class="saze" data-cl=".sazeL-bolt912_M20">M20 </li>
+                </ul>
+              </div>
+              <div class="sazL-wrap sazeL-bolt912_M6">
+                <ul>
+                  <li class="sazeL" data-vess="4,70">10</li>
+                  <li class="sazeL" data-vess="5,07">12</li>
+                  <li class="sazeL" data-vess="5,75">16</li>
+                  <li class="sazeL" data-vess="6,53">20</li>
+                  <li class="sazeL" data-vess="7,59">25</li>
+                  <li class="sazeL" data-vess="8,30">30</li>
+                  <li class="sazeL" data-vess="9,91">35</li>
+                  <li class="sazeL" data-vess="11,0">40</li>
+                  <li class="sazeL" data-vess="12,1">45</li>
+                  <li class="sazeL" data-vess="13,2">50</li>
+                  <li class="sazeL" data-vess="14,3">55</li>
+                  <li class="sazeL" data-vess="15,4">60</li>
+                </ul>
+              </div>
+              <div class="sazL-wrap sazeL-bolt912_M8">
+                <ul>
+                  <li class="sazeL" data-vess="10,9">12</li>
+                  <li class="sazeL" data-vess="12,1">16</li>
+                  <li class="sazeL" data-vess="13,4">20</li>
+                  <li class="sazeL" data-vess="15,0">25</li>
+                  <li class="sazeL" data-vess="16,9">30</li>
+                  <li class="sazeL" data-vess="18,9">35</li>
+                  <li class="sazeL" data-vess="20,9">40</li>
+                  <li class="sazeL" data-vess="22,9">45</li>
+                  <li class="sazeL" data-vess="24,9">50</li>
+                  <li class="sazeL" data-vess="26,9">55</li>
+                  <li class="sazeL" data-vess="28,9">60</li>
+                  <li class="sazeL" data-vess="31,0">65</li>
+                  <li class="sazeL" data-vess="33,0">70</li>
+                  <li class="sazeL" data-vess="37,0">80</li>
+                </ul>
+              </div>
+              <div class="sazL-wrap sazeL-bolt912_M10">
+                <ul>
+                  <li class="sazeL" data-vess="20,9">16</li>
+                  <li class="sazeL" data-vess="22,9">20</li>
+                  <li class="sazeL" data-vess="25,4">25</li>
+                  <li class="sazeL" data-vess="27,9">30</li>
+                  <li class="sazeL" data-vess="30,4">35</li>
+                  <li class="sazeL" data-vess="32,9">40</li>
+                  <li class="sazeL" data-vess="36,1">45</li>
+                  <li class="sazeL" data-vess="39,3">50</li>
+                  <li class="sazeL" data-vess="42,5">55</li>
+                  <li class="sazeL" data-vess="45,7">60</li>
+                  <li class="sazeL" data-vess="48,9">65</li>
+                  <li class="sazeL" data-vess="52,1">70</li>
+                  <li class="sazeL" data-vess="58,5">80</li>
+                  <li class="sazeL" data-vess="64,9">90</li>
+                  <li class="sazeL" data-vess="71,2">100</li>
+                </ul>
+              </div>
+              <div class="sazL-wrap sazeL-bolt912_M12">
+                <ul>
+                  <li class="sazeL" data-vess="32,1">20</li>
+                  <li class="sazeL" data-vess="35,7">25</li>
+                  <li class="sazeL" data-vess="39,3">30</li>
+                  <li class="sazeL" data-vess="42,9">35</li>
+                  <li class="sazeL" data-vess="46,5">40</li>
+                  <li class="sazeL" data-vess="50,1">45</li>
+                  <li class="sazeL" data-vess="54,5">50</li>
+                  <li class="sazeL" data-vess="58,9">55</li>
+                  <li class="sazeL" data-vess="63,4">60</li>
+                  <li class="sazeL" data-vess="67,8">65</li>
+                  <li class="sazeL" data-vess="71,3">70</li>
+                  <li class="sazeL" data-vess="80,2">80</li>
+                  <li class="sazeL" data-vess="89,1">90</li>
+                  <li class="sazeL" data-vess="98,0">100</li>
+                  <li class="sazeL" data-vess="107">110</li>
+                  <li class="sazeL" data-vess="180">120</li>
+                </ul>
+              </div>
+              <div class="sazL-wrap sazeL-bolt912_M14">
+                <ul>
+                  <li class="sazeL" data-vess="48,0">25</li>
+                  <li class="sazeL" data-vess="53,0">30</li>
+                  <li class="sazeL" data-vess="58,0">35</li>
+                  <li class="sazeL" data-vess="63,0">40</li>
+                  <li class="sazeL" data-vess="68,0">45</li>
+                  <li class="sazeL" data-vess="73,0">50</li>
+                  <li class="sazeL" data-vess="78,0">55</li>
+                  <li class="sazeL" data-vess="84,0">60</li>
+                  <li class="sazeL" data-vess="90,0">65</li>
+                  <li class="sazeL" data-vess="96,0">70</li>
+                  <li class="sazeL" data-vess="108">80</li>
+                  <li class="sazeL" data-vess="120">90</li>
+                  <li class="sazeL" data-vess="132">100</li>
+                  <li class="sazeL" data-vess="144">110</li>
+                  <li class="sazeL" data-vess="156">120</li>
+                  <li class="sazeL" data-vess="168">130</li>
+                  <li class="sazeL" data-vess="180">140</li>
+                </ul>
+              </div>
+              <div class="sazL-wrap sazeL-bolt912_M16">
+                <ul>
+                  <li class="sazeL" data-vess="71,3">25</li>
+                  <li class="sazeL" data-vess="77,8">30</li>
+                  <li class="sazeL" data-vess="84,4">35</li>
+                  <li class="sazeL" data-vess="91,0">40</li>
+                  <li class="sazeL" data-vess="97,6">45</li>
+                  <li class="sazeL" data-vess="106">50</li>
+                  <li class="sazeL" data-vess="114">55</li>
+                  <li class="sazeL" data-vess="122">60</li>
+                  <li class="sazeL" data-vess="130">65</li>
+                  <li class="sazeL" data-vess="138">70</li>
+                  <li class="sazeL" data-vess="154">80</li>
+                  <li class="sazeL" data-vess="170">90</li>
+                  <li class="sazeL" data-vess="186">100</li>
+                  <li class="sazeL" data-vess="202">110</li>
+                  <li class="sazeL" data-vess="218">120</li>
+                  <li class="sazeL" data-vess="234">130</li>
+                  <li class="sazeL" data-vess="250">140</li>
+                  <li class="sazeL" data-vess="266">150</li>
+                  <li class="sazeL" data-vess="282">160</li>
+                </ul>
+              </div>
+              <div class="sazL-wrap sazeL-bolt912_M18">
+                <ul>
+                  <li class="sazeL" data-vess="111">30</li>
+                  <li class="sazeL" data-vess="120">35</li>
+                  <li class="sazeL" data-vess="129">40</li>
+                  <li class="sazeL" data-vess="138">45</li>
+                  <li class="sazeL" data-vess="147">50</li>
+                  <li class="sazeL" data-vess="156">55</li>
+                  <li class="sazeL" data-vess="165">60</li>
+                  <li class="sazeL" data-vess="174">65</li>
+                  <li class="sazeL" data-vess="183">70</li>
+                  <li class="sazeL" data-vess="203">80</li>
+                  <li class="sazeL" data-vess="223">90</li>
+                  <li class="sazeL" data-vess="243">100</li>
+                  <li class="sazeL" data-vess="263">110</li>
+                  <li class="sazeL" data-vess="283">120</li>
+                  <li class="sazeL" data-vess="303">130</li>
+                  <li class="sazeL" data-vess="323">140</li>
+                  <li class="sazeL" data-vess="343">150</li>
+                  <li class="sazeL" data-vess="363">160</li>
+                  <li class="sazeL" data-vess="403">180</li>
+                </ul>
+              </div>
+              <div class="sazL-wrap sazeL-bolt912_M20">
+                <ul>
+                  <li class="sazeL" data-vess="128">30</li>
+                  <li class="sazeL" data-vess="139">35</li>
+                  <li class="sazeL" data-vess="150">40</li>
+                  <li class="sazeL" data-vess="161">45</li>
+                  <li class="sazeL" data-vess="172">50</li>
+                  <li class="sazeL" data-vess="183">55</li>
+                  <li class="sazeL" data-vess="194">60</li>
+                  <li class="sazeL" data-vess="205">65</li>
+                  <li class="sazeL" data-vess="216">70</li>
+                  <li class="sazeL" data-vess="241">80</li>
+                  <li class="sazeL" data-vess="266">90</li>
+                  <li class="sazeL" data-vess="291">100</li>
+                  <li class="sazeL" data-vess="316">110</li>
+                  <li class="sazeL" data-vess="341">120</li>
+                  <li class="sazeL" data-vess="366">130</li>
+                  <li class="sazeL" data-vess="391">140</li>
+                  <li class="sazeL" data-vess="416">150</li>
+                  <li class="sazeL" data-vess="441">160</li>
+                  <li class="sazeL" data-vess="491">180</li>
+                  <li class="sazeL" data-vess="541">200</li>
+                </ul>
+              </div>
+<!-- ----------------52644-2006-------------- -->
+<div class="saze-wrap saze-bolt52644">
+  <ul>
+    <li class="saze" data-cl=".sazeL-bolt52644_M16">M16 </li>
+    <li class="saze" data-cl=".sazeL-bolt52644_M20">M20 </li>
+    <li class="saze" data-cl=".sazeL-bolt52644_M22">M22 </li>
+    <li class="saze" data-cl=".sazeL-bolt52644_M24">M24 </li>
+  </ul>
+</div>
+
+<div class="sazL-wrap sazeL-bolt52644_M16">
+  <ul>
+    <li class="sazeL" data-vess="127">50</li>
+    <li class="sazeL" data-vess="142">60</li>
+    <li class="sazeL" data-vess="150">65</li>
+    <li class="sazeL" data-vess="158">70</li>
+    <li class="sazeL" data-vess="165">75</li>
+    <li class="sazeL" data-vess="173">80</li>
+    <li class="sazeL" data-vess="181">85</li>
+    <li class="sazeL" data-vess="189">90</li>
+    <li class="sazeL" data-vess="196">95</li>
+    <li class="sazeL" data-vess="204">100</li>
+    <li class="sazeL" data-vess="211">105</li>
+    <li class="sazeL" data-vess="219">110</li>
+    <li class="sazeL" data-vess="227">115</li>
+    <li class="sazeL" data-vess="234">120</li>
+    <li class="sazeL" data-vess="242">125</li>
+    <li class="sazeL" data-vess="250">130</li>
+    <li class="sazeL" data-vess="265">140</li>
+    <li class="sazeL" data-vess="280">150</li>
+  </ul>
+</div>
+<div class="sazL-wrap sazeL-bolt52644_M20">
+  <ul>
+    <li class="sazeL" data-vess="224">60</li>
+    <li class="sazeL" data-vess="236">65</li>
+    <li class="sazeL" data-vess="248">70</li>
+    <li class="sazeL" data-vess="260">75</li>
+    <li class="sazeL" data-vess="272">80</li>
+    <li class="sazeL" data-vess="284">85</li>
+    <li class="sazeL" data-vess="296">90</li>
+    <li class="sazeL" data-vess="308">95</li>
+    <li class="sazeL" data-vess="320">100</li>
+    <li class="sazeL" data-vess="332">105</li>
+    <li class="sazeL" data-vess="344">110</li>
+    <li class="sazeL" data-vess="356">115</li>
+    <li class="sazeL" data-vess="368">120</li>
+    <li class="sazeL" data-vess="380">125</li>
+    <li class="sazeL" data-vess="392">130</li>
+    <li class="sazeL" data-vess="416">140</li>
+    <li class="sazeL" data-vess="440">150</li>
+    <li class="sazeL" data-vess="462">160</li>
+    <li class="sazeL" data-vess="485">170</li>
+    <li class="sazeL" data-vess="510">180</li>
+    <li class="sazeL" data-vess="534">190</li>
+    <li class="sazeL" data-vess="558">200</li>
+    <li class="sazeL" data-vess="606">220</li>
+    <li class="sazeL" data-vess="655">240</li>
+  </ul>
+</div>
+<div class="sazL-wrap sazeL-bolt52644_M22">
+  <ul>
+    <li class="sazeL" data-vess="284">60</li>
+    <li class="sazeL" data-vess="299">65</li>
+    <li class="sazeL" data-vess="314">70</li>
+    <li class="sazeL" data-vess="328">75</li>
+    <li class="sazeL" data-vess="343">80</li>
+    <li class="sazeL" data-vess="357">85</li>
+    <li class="sazeL" data-vess="372">90</li>
+    <li class="sazeL" data-vess="386">95</li>
+    <li class="sazeL" data-vess="401">100</li>
+    <li class="sazeL" data-vess="416">105</li>
+    <li class="sazeL" data-vess="430">110</li>
+    <li class="sazeL" data-vess="445">115</li>
+    <li class="sazeL" data-vess="459">120</li>
+    <li class="sazeL" data-vess="474">125</li>
+    <li class="sazeL" data-vess="489">130</li>
+    <li class="sazeL" data-vess="518">140</li>
+    <li class="sazeL" data-vess="547">150</li>
+    <li class="sazeL" data-vess="574">160</li>
+    <li class="sazeL" data-vess="603">170</li>
+    <li class="sazeL" data-vess="632">180</li>
+    <li class="sazeL" data-vess="661">190</li>
+    <li class="sazeL" data-vess="690">200</li>
+    <li class="sazeL" data-vess="649">220</li>
+    <li class="sazeL" data-vess="807">240</li>
+  </ul>
+</div>
+<div class="sazL-wrap sazeL-bolt52644_M24">
+  <ul>
+    <li class="sazeL" data-vess="369">60</li>
+    <li class="sazeL" data-vess="388">65</li>
+    <li class="sazeL" data-vess="406">70</li>
+    <li class="sazeL" data-vess="423">75</li>
+    <li class="sazeL" data-vess="440">80</li>
+    <li class="sazeL" data-vess="458">85</li>
+    <li class="sazeL" data-vess="475">90</li>
+    <li class="sazeL" data-vess="493">95</li>
+    <li class="sazeL" data-vess="510">100</li>
+    <li class="sazeL" data-vess="527">105</li>
+    <li class="sazeL" data-vess="545">110</li>
+    <li class="sazeL" data-vess="562">115</li>
+    <li class="sazeL" data-vess="580">120</li>
+    <li class="sazeL" data-vess="597">125</li>
+    <li class="sazeL" data-vess="614">130</li>
+    <li class="sazeL" data-vess="648">140</li>
+    <li class="sazeL" data-vess="684">150</li>
+    <li class="sazeL" data-vess="716">160</li>
+    <li class="sazeL" data-vess="750">170</li>
+    <li class="sazeL" data-vess="785">180</li>
+    <li class="sazeL" data-vess="820">190</li>
+    <li class="sazeL" data-vess="855">200</li>
+    <li class="sazeL" data-vess="924">220</li>
+    <li class="sazeL" data-vess="994">240</li>
+  </ul>
+</div>
+
+
+<!-- =========================================================== -->
+              <div class="gost-wrap gwG">
+                <ul>
+                  <li class="gost" data-cl=".saze-gaik5915">
+                    <p>ГОСТ 5915 (DIN 934)</p>
+                  </li>
+                  <li class="gost" data-cl=".saze-gaik5927">
+                    <p>ГОСТ 5927</p>
+                  </li>
+                  <li class="gost" data-cl=".saze-gaik6923">
+                    <p>DIN 6923</p>
+                  </li>
+                  <li class="gost" data-cl=".saze-gaik52645">
+                    <p>ГОСТ Р 52645-2006</p></li>
+                  <!-- <li class="gost"></li> -->
+                </ul>
+              </div>
+              <div class="saze-wrap saze-gaik5915">
+                <ul>
+                  <li class="sazeL" data-vess="1,23">M6</li>
+                  <li class="sazeL" data-vess="5,2">M8 </li>
+                  <li class="sazeL" data-vess="11,6">M10 </li>
+                  <li class="sazeL" data-vess="17,3">M12 </li>
+                  <li class="sazeL" data-vess="28,91">M14 </li>
+                  <li class="sazeL" data-vess="33,3">M16 </li>
+                  <li class="sazeL" data-vess="53,27">M18 </li>
+                  <li class="sazeL" data-vess="64,4">M20 </li>
+                  <li class="sazeL" data-vess="85,67">M22 </li>
+                  <li class="sazeL" data-vess="122,87">M24 </li>
+                  <li class="sazeL" data-vess="175,28">M27 </li>
+                  <li class="sazeL" data-vess="242,54">M30 </li>
+                  <li class="sazeL" data-vess="416,78">M36 </li>
+                  <li class="sazeL" data-vess="623,9">M42 </li>
+                  <li class="sazeL" data-vess="956,2">M48 </li>
+                </ul>
+              </div>
+              <div class="saze-wrap saze-gaik5927">
+                <ul>
+                  <!-- <li class="saze" data-vess="">M6</li>
+                  <li class="sazeL" data-vess="">M8 </li> -->
+                  <li class="sazeL" data-vess="10,22">M10 </li>
+                  <li class="sazeL" data-vess="15,67">M12 </li>
+                  <!-- <li class="sazeL" data-vess="">M14 </li>
+                  <li class="sazeL" data-vess="">M16 </li>
+                  <li class="sazeL" data-vess="">M18 </li>
+                  <li class="sazeL" data-vess="">M20 </li>
+                  <li class="sazeL" data-vess="">M22 </li>
+                  <li class="sazeL" data-vess="">M24 </li>
+                  <li class="sazeL" data-vess="">M27 </li>
+                  <li class="sazeL" data-vess="">M30 </li>
+                  <li class="sazeL" data-vess="">M36 </li>
+                  <li class="sazeL" data-vess="">M42 </li>
+                  <li class="sazeL" data-vess="">M48 </li> -->
+                </ul>
+              </div>
+              <div class="saze-wrap saze-gaik6923">
+                <ul>
+                  <li class="sazeL" data-vess="3,21">M6</li>
+                  <li class="sazeL" data-vess="7,14">M8 </li>
+                  <li class="sazeL" data-vess="11,9">M10 </li>
+                  <li class="sazeL" data-vess="20,0">M12 </li>
+                  <li class="sazeL" data-vess="35,71">M14 </li>
+                  <li class="sazeL" data-vess="40,32">M16 </li>
+                </ul>
+              </div>
+              <div class="saze-wrap saze-gaik52645">
+                <ul>
+                  <li class="sazeL" data-vess="56">M16</li>
+                  <li class="sazeL" data-vess="89">M20 </li>
+                  <li class="sazeL" data-vess="130">M22 </li>
+                  <li class="sazeL" data-vess="183">M24 </li>
+                </ul>
+              </div>
+
+
+
+<!-- ------------------------------------------------- -->
+              <div class="gost-wrap gwSH">
+                <li class="gost"></li>
+                <li class="gost"></li>
+                <li class="gost"></li>
+                <li class="gost"></li>
+                <li class="gost"></li>
+              </div>
+
+              <div class="gost-wrap gwGR">
+                <li class="gost"></li>
+                <li class="gost"></li>
+                <li class="gost"></li>
+                <li class="gost"></li>
+                <li class="gost"></li>
+              </div>
+
+              <div class="gost-wrap gwZ">
+                <li class="gost"></li>
+                <li class="gost"></li>
+                <li class="gost"></li>
+                <li class="gost"></li>
+                <li class="gost"></li>
+              </div>
+
+
+            </div>
+            <form id="formCalk" class="blok-form">
+              <div class="centr-wrap">
+                <div class="inpu-wrap">
+                 <label>Введите число
+                 <input type="tel" id="number" ></label>
+               </div>
+                <div class="rad-wrap">
+                  <input class="rad" type="radio" name="ves" value="11" checked>Штук
+                  <input class="rad" type="radio" name="ves" value="22">Вес
+                </div>
+              </div>
+              <div class="bat">
+                <button class="btn-calck" type="submit" id="app">результат</button>
+                <button class="btn-calck" type="reset" id="stop">сброс</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="conteiner-futer">
+      <div class="wrap wrap-footer">
+        <div class="logo" s><span>ДПР</span></div>
+        <div class="btn btn-footer" id="zakaz" >Отправить заявку</div>
+      </div>
+    </div>
+  </footer>
+  <div class="s-zakaz">
+    <a name='zakaz'></a>
+  <div class="wind-zakaz sert">
+    <i class="fa fa-times" id="x-form" aria-hidden="true"></i>
+     <h2 >Отправить заявку</h2>
+  
+ 
+      <p> Мы рады предоставить Вам исчерпывающую информацию   <span>по интересующим позициям , заполните форму и мы свяжемся с вами</span> в ближайшее время. </p>
+
+    <iframe id="zak" src="https://docs.google.com/forms/d/e/1FAIpQLSfWtAQ3cFIyRF22AKp-Pv7Kguv9wB7yH1KdE5VQyrFs4ZDq8Q/viewform?embedded=true"     frameborder="0" marginheight="0" marginwidth="0" >Загрузка…</iframe>
+  </div>
+</div>
+
+  <script src="/js/JQuery/jquery-3.3.1.min.js"></script>
+  <script src="/js/about.js"></script>
+</body>
+
+</html>
