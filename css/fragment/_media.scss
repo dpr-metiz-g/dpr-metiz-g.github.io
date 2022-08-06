@@ -1,0 +1,584 @@
+// --------media-----------------
+@media only screen and(max-width:1330px) {
+
+  .lain-top .fa-bars {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .cont-text-heder {
+    transform: translateY(-5%);
+  }
+  .nav-footer{
+    left: 45%;
+  }
+
+}
+
+@media only screen and (max-width:1100px) {
+
+  .cont-text-heder {
+    width: 100%;
+    & h1 {
+      font-size: 36px;
+      padding: 15px 0;
+    }
+  }
+  //------------zakaz--------
+  .wind-zakaz{
+    & span {
+      display: none;
+    }
+    #x-form {
+      top: 5%;
+      right: 10%;
+    }
+  }
+  // -------mash---
+  .mash-string,
+  .mash-bild {
+    & h2 {
+      font-size: 24px;
+      padding: 40px 0 20px;
+    }
+  }
+  .nav-footer{
+    display: none;
+  }
+// ---------------calkulator------------------
+.btn-calck{
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+}
+
+@media only screen and (max-width:992px) {
+  .phon-top {
+    font-size: 24px;
+    padding-right: 20px;
+    right: 15%;
+  }
+
+  .text-heder {
+    width: 100%;
+    & p{
+      font-size: 16px;
+    }
+  }
+
+  //----mash------------------------------------------
+  .cont-mash-bild {
+    height: 1300px;
+
+    overflow: hidden;
+  }
+
+  .mash-grid {
+    // height: 100vh*1.9;
+    // max-height: 1260px;
+    height: 1260px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 30px;
+    .mash-string {
+      grid-column: 1;
+      grid-row: 2/3;
+    }
+    .mash-bild {
+      grid-column: 1;
+      grid-row: 1/2;
+    }
+  }
+  // -------------sertificat-----
+  #cont-up .sert {
+    & .img-sert {
+      font-size: 85px;
+      & img{
+        width: 70%;
+      }
+    }
+  }
+  // ---------------------------------------------------
+  #cont-spesh{
+    height: 100vh*1.2;
+    max-height: 700px;
+    .mash-grid2 {
+      height: 100vh*1.2;
+      max-height: 680px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 0px;
+    }
+    .mash-nu-string{
+      grid-column: 1;
+      grid-row: 1/2;
+    }
+    .heig{
+      grid-column: 1;
+      grid-row: 2/3;
+    }
+  }
+// ------------------------------------------------------
+  // -----------contact-------
+  .conteiner-contact{
+    height: 600px;
+
+    .cont-contact-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 15px;
+
+      .text-contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+         .ofis{
+            grid-column: 1/2;
+          }
+          .ofis-fon{
+            grid-column: 2/2;
+            align-self:end;
+            justify-self: end;
+            padding-right: 50px;
+
+
+         }
+      }
+      .text-contact-sclad{
+        grid-template-rows: auto auto ;
+        height: auto;
+        padding-left: 15px;
+      }
+    }
+  }
+  .f{
+     color: $col-w;
+    opacity: .6;
+    transform: translateX(50vw) translateY(2px); 
+  }
+  .fa-fw {
+    left: 0%;
+  }
+  // -----------about htnt---------------------------
+  .about-grid{
+    grid-template-columns: 1fr 1.5fr ;
+  }
+}
+@media only screen and (max-width:790px){
+  .about-grid{
+    grid-template-columns: 1fr ;
+    grid-template-rows: minmax(auto,540px) auto;
+  }
+  .wrap .h1 .cont-text-heder {
+ 
+    & h1 {
+      font-size: 36px;
+      padding: 15px 0;
+    }
+    & .slogan{
+      font-size: 22px;
+    } //---------------
+    & p ,.text-h2{
+      font-size: 16px;
+    }
+  }
+    //----------zakaz---------
+    .wind-zakaz{
+      & p {
+        display: none;
+      }
+      #x-form {
+        right: 5%;
+      }
+    }
+  #zak{
+    transform: translateX(-50%) translateY(-50%);
+    height: 70vh;
+    width: 90vw;
+  }
+}
+@media only screen and (max-width:700px) {
+  .phon-top {
+    font-size: 20px;
+    padding-right: 20px;
+    right: 15%;
+  }
+  .text-heder {
+    width: 100%;
+  }
+
+ 
+  .cont-text-heder{
+
+    .btn-prais{
+      margin-top: 15px;
+    }
+  }
+
+
+ 
+  // -----------main-------------
+  .cont-mash-bild {
+    // height: 100vh*2.1;
+    height: 1350px;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .mash-grid {
+    // height: 100vh*2.0;
+    height: 1340px;
+  }
+// -------sertificet-------
+.text-sert {
+  display:block;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  & p {
+    padding: 20px 30px ;
+    line-height: 1.4;
+    text-align: justify;
+  }
+}
+
+.cont-sert .sert-btn {
+  display: block;
+  .b-s {
+    position: relative;
+    white-space : nowrap; 
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+  }
+}
+#cont-up .sert {
+  & .img-sert {
+    font-size: 65px;
+    & img{
+      width: 80%;
+    }
+  }
+}
+// ---------s-meneger-----------------------
+  // -----------about htnt---------------------------
+}
+
+@media only screen and (max-width:610px) {
+  .wrap{
+    width: 90%;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .phon-top {
+    font-size: 16px;
+    padding-right: 25px;
+    right: 10%;
+  }
+  #loop{
+    display: none;
+  }
+  .lain-top .fa-bars {
+    right: -4%;
+    padding-bottom: 5px;
+  }
+  #leng-top{
+    bottom: -40%;
+    right: 2%;
+    & a{
+    font-size: 16px;
+    }    
+  }
+
+    .cont-canvas {
+      display: none;
+    }
+  .wrap .h1 .cont-text-heder {
+    // padding-top: 30%;
+    width: 100%;
+    & h1 {
+      font-size: 28px;
+      padding: 15px 0;
+    }
+  }
+ 
+  // -----------------sertificat---
+  .text-sert>p{
+    text-align: inherit;
+    padding: 30px 15px ;
+  }
+
+  #cont-up .sert {
+    & .img-sert {
+      font-size: 45px;
+    }
+  }
+  // ---------firma---------
+  .cont-firma .wrap>h2>span{
+    display: none;
+  }
+  .fa-map-marker , .fa-mobile ,.fa-phone ,.fa-envelope-o{
+    display: none;
+  }
+// ----------calk------------------
+#formCalk{
+  text-align: right;
+  .centr-wrap,.bat{
+    display: block;
+  }
+  .bat{
+    right: 50px;
+    margin-top: 20px;
+  }
+  .inpu-wrap{
+    width: 202px;
+    margin-right: 20px;
+  }
+  .rad-wrap{
+    text-align: right;
+  }
+}
+.calck-menu{
+  .c-menu-wrap{
+    width:30vw;
+    left: 0px;
+  }
+  .gost-wrap{
+    min-width:150px;
+     left: 30vw;
+  }
+  .saze-wrap{
+    min-width:150px;
+    left:30vw;
+   }
+  .sazL-wrap{
+    min-width:150px;
+    left: 30vw;
+  }
+}
+}
+@media only screen and (max-width:520px){
+  .conteiner-contact{
+    height: 800px;
+  }
+  .conteiner-contact .cont-contact-grid .text-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+     .ofis{
+        grid-column: 1/1;
+        grid-row: 1/2;
+      }
+      .ofis-fon{
+        grid-column: 1;
+        grid-row: 2/2;
+        align-self:start;
+        justify-self: start;
+      }
+  }
+  .cont-contact-grid .text-contact-sclad .sclad  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    .sclad-text,.sclad-text2  {
+      grid-column: 1;
+      grid-row: 1/2;
+    }
+
+    .b-skl , .b-skl2 {
+      grid-column: 1;
+      grid-row: 2/2;
+      display: inline-block;
+      align-self:start;
+      justify-self: start; 
+      & p{
+        display: none;
+      }
+      .b1{
+        margin: 15px 0; 
+       }
+
+    }
+
+  }
+  .cont-contact-grid .text-contact-sclad .sclad2  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    .sclad-text2  {
+      grid-column: 1;
+      grid-row: 1/2;
+    }
+
+     .b-skl2 {
+      grid-column: 1;
+      grid-row: 2/2;
+      display: inline-block;
+      align-self:start;
+      justify-self: start; 
+      & p{
+        display: none;
+      }
+      .b2{
+        margin: 15px 0; 
+       }
+
+    }
+
+  }
+
+}
+@media only screen and(max-width:460px) {
+
+ // -----------main-------------
+  .cont-mash-bild {
+    height: 1450px;
+    // height: 100vh*2.4;
+    // max-height: none;
+  }
+  .mash-grid {
+    height: 1450px;
+    // height: 100vh*2.;
+    // max-height: none;
+  }
+  .wrapper article ul li a{
+    text-decoration: underline;
+  }
+  .s-lain-botton-mobil{
+    display: block;
+  }
+  .cont-firma {
+    border-top: $col-fw 1px solid;
+    padding: 15px 0;
+    .w-firm{
+      width: 86%;
+    }
+    .prev {
+      right: -7%;
+    }
+    
+    .next {
+      left: -7%;
+    }
+  }
+ .mobil{
+   display: none;
+ }
+
+
+// --------------calk--------------
+.cont-calck{
+  height: 100vh;
+  min-height: 750px;
+}
+#formCalk{
+  text-align: center;
+  padding-top: 260px;
+  padding-left: 20px;
+  .bat{
+    right: 25%;
+  }
+  .inpu-wrap{
+    width: 202px;
+    margin-right: 0px;
+  }
+  .rad-wrap{
+    text-align: center;
+  }
+}
+  .calck-menu{
+    margin-left: 10%;
+    .c-menu-wrap{
+      width:40vw;
+      left: 0px;
+    }
+    .gost-wrap{
+      min-width:150px;
+       left: 40vw;
+    }
+    .saze-wrap{
+      min-width:150px;
+      left:40vw;
+     }
+    .sazL-wrap{
+      min-width:150px;
+      left: 40vw;
+    }
+  }
+
+
+
+
+}
+@media only screen and(max-width:320px) {
+  .wrap{
+    width: 86%;
+  }
+  .lain-top .fa-bars {
+    display: none;
+  }
+  .phon-top {
+    font-size: 18px;
+    padding-right: 10px;
+    right: 0%;
+  }
+
+  .sert-btn .b-s{
+    display:block;
+    margin: auto;
+  }
+
+  //-------------------
+
+  .cont-firma{
+    padding-bottom: 30px;
+  }
+// ------------------
+
+ #im1 ,#im2{
+  white-space : nowrap;
+ }
+//  --------------------------
+.conteiner-contact{
+  height: 100vh*2;
+  min-height: 1100px;
+  .cont-contact-grid{
+    height: 100vh*1.8;
+    min-height: 1100px;
+  }
+}
+ .text-contactB .text-contact{
+  .sclad{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.7fr ;
+    .adr{
+      padding-left: 20px;
+    }
+    .sclad-text{
+      padding-left: 20px;
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+    .b-skl{
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+  }
+}
+.conteiner-contact .cont-contact-grid .text-contactB .text-contact .phon-ofis{
+  padding-left: 20px;
+  align-self:start;
+  justify-self:start;
+}
+.btn-footer{
+  display: none;
+}
+}
