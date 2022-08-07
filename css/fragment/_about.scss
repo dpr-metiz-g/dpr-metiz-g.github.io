@@ -26,6 +26,7 @@ header .invert{
     color: rgba(0, 0, 20, 1);
     font-size: 34px;
     padding: 20px 30px;
+    white-space : nowrap;  
   }
 }
 .about-text > img{  
@@ -48,74 +49,24 @@ header .invert{
 
 }
 @media only screen and (max-width:450px) {
+  #about h2{
+    font-size: 26px ;
+    }
+}
+@media only screen and (max-width:450px) {
   .about-text > p{
     padding-left: 10px;
   }
+  .about-text > img{  
+    width: 260px;
+  }
+  #about h2{
+    font-size: 20px ;
+    }
 }
-
 
   
 
-// .about-img{
-//   padding-top: 70px;
-//   .ab-cont{
-//     width: 100%;
-//     height: 80vh;
-//   }
-//   .ab-img{
-//     position: relative;
-//     min-width: 300px;
-//     min-height:200px;
-//     background-size: cover;
-//     &::after {
-//       content: '';
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       right: 0;
-//       bottom: 0;
-//       background-color: rgba(0, 0, 12, .3);
-//       background-size: cover;
-//       cursor: pointer;
-//       transform: scale(.9);
-//       transition: all 0.3s ease;
-//     }
-//     &:hover{
-//       transition: all 0.3s ease;
-//       transform: scale(1.01);
-//       &::after{
-//         transition: all 0.5s ease;
-//         opacity: 0;
-//       }
-//     }
-//     & img{
-//       width: 100%;
-//       height: auto;
-//     }
-//     }
-//   .ab-button{
-//     display: none;
-//    text-align: center;
-//    padding: 40px;
-//    cursor: pointer;
-//    .btn-about {
-//     font-size: 20px;
-//     padding: 10px 30px;
-//     background-color: rgba(0, 0, 20, .2); 
-//     border-left:  rgba(0, 0, 20, .8) 1px solid;
-//     border-right:  rgba(0, 0, 20, .8) 1px solid;
-//     border-bottom: none;
-//     box-shadow: 0px 2px 0px  rgba(0, 0, 20,.8);
-//     border-radius: 3px;
-//     transition: all 0.25s ease;
-//     &:hover {
-//       color: #ffffff;
-//       background-color: rgba(0, 0, 20, .9); 
-//       box-shadow: 0px 2px 0px  rgba(0, 0, 20,1);
-//     }
-//   }
-// }
-// }
 .conteiner-futer{
   background-color: rgba(0, 0, 12, 0.8);
 }

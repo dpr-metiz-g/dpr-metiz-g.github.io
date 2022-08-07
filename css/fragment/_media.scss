@@ -101,6 +101,9 @@
       }
     }
   }
+  #boss , #boss2 {
+    font-size: 26px;
+  }
   // ---------------------------------------------------
   #cont-spesh{
     height: 100vh*1.2;
@@ -273,29 +276,33 @@
   .wrap{
     width: 90%;
   }
+  .lain-top{
+    padding-bottom: 10px;
+  }
   .logo {
     font-size: 30px;
   }
   .phon-top {
-    font-size: 16px;
-    padding-right: 25px;
-    right: 10%;
+    font-size: 20px;
+    padding-right: 30px;
+    right: 15%;
   }
   #loop{
     display: none;
   }
   .lain-top .fa-bars {
     right: -4%;
-    padding-bottom: 5px;
+    font-size: 26px;
+    padding-bottom: 0;
   }
   #leng-top{
-    bottom: -40%;
+    bottom: -80%;
     right: 2%;
     & a{
-    font-size: 16px;
+    font-size: 14px;
     }    
   }
-
+  
     .cont-canvas {
       display: none;
     }
@@ -440,13 +447,11 @@
  // -----------main-------------
   .cont-mash-bild {
     height: 1450px;
-    // height: 100vh*2.4;
-    // max-height: none;
+
   }
   .mash-grid {
     height: 1450px;
-    // height: 100vh*2.;
-    // max-height: none;
+
   }
   .wrapper article ul li a{
     text-decoration: underline;
@@ -512,7 +517,9 @@
       left: 40vw;
     }
   }
-
+  #boss , #boss2 {
+    font-size: 18px;
+  }
 
 
 

@@ -20,23 +20,6 @@ function doutText(){
  $(".input-top-wrap").fadeOut(350);
 }
 
-// ---------------img button -----------------
-$('.about-img').hover(function(){
-  $('.ab-button').fadeIn(500);
-},function(){
-  $('.ab-button').fadeOut(500);
-})
-$('a[href=" #form-prais"],.btn-footer').on('click', function() {
-  $('.hidden').fadeIn(500);
-  var datatext=$(this).data('text');
-  var dataform=$(this).data('form');
-  $('.form-callback> h2').text(datatext);
-  $('.hidden> [name="admin-data"]').val(dataform);
- });
-
-$('#x-form').on('click',  function (){
-  $('.hidden').fadeOut(500);
- });
 
   // ---------------------zakaz----------------
 
@@ -152,7 +135,7 @@ $('#stop').on('click',  function (){
 });
 //-------------------прелоудер ---------------
 $(window).on('load',function(){
-  $(".preloyder").delay(1000).fadeOut("slow");
+  $(".preloyder").delay(500).fadeOut("slow");
 });
 
 

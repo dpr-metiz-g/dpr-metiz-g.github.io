@@ -57,7 +57,7 @@ $(document).ready(function(){
     ctx.fill();
   }  draw4();
 
-// -----------numer-animatio------------------
+
 //--------    accardion  ----------------
 $('.wrapper>article').not(':first-of-type').hide();
 // $('.wrapper>article').hide();  
@@ -122,7 +122,7 @@ function doutText(){
     $('.s-zakaz').fadeIn(300); 
    });
   
-  $('#x-form').on('click',  function (){
+  $('#x-form,#f-x').on('click',  function (){
     $('.s-zakaz').fadeOut(300);
    });
 // // ------------------------

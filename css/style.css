@@ -29,6 +29,7 @@ header .invert .lain-top .nav-heder {
   color: #000014;
   font-size: 34px;
   padding: 20px 30px;
+  white-space: nowrap;
 }
 
 .about-text > img {
@@ -52,8 +53,20 @@ header .invert .lain-top .nav-heder {
 }
 
 @media only screen and (max-width: 450px) {
+  #about h2 {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .about-text > p {
     padding-left: 10px;
+  }
+  .about-text > img {
+    width: 260px;
+  }
+  #about h2 {
+    font-size: 20px;
   }
 }
 
@@ -279,8 +292,8 @@ body {
   background-color: #FFF;
   opacity: 0.65;
   margin: -15px auto 0;
-  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
-          animation: rotateplane 1.2s infinite ease-in-out;
+  -webkit-animation: rotateplane 1.2s infinite ease-out;
+          animation: rotateplane 1.2s infinite ease-out;
 }
 
 @-webkit-keyframes rotateplane {
@@ -889,7 +902,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(0, 0, 15, 0.85);
+  background-color: rgba(0, 0, 15, 0.673);
   background-size: cover;
   z-index: 99;
 }
@@ -897,7 +910,6 @@ body {
 .sert .img-sert {
   background-size: cover;
   color: #f5f5f5;
-  font-size: 36px;
 }
 
 .sert .img-sert img {
@@ -917,6 +929,7 @@ body {
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   z-index: 1;
+  font-size: 36px;
 }
 
 .sert .img-sert #x-sertf, .sert .img-sert #x-sertf2 {
@@ -1295,6 +1308,118 @@ map-sklad2 {
   display: inline-bloc;
 }
 
+.canvas-ru {
+  display: none;
+}
+
+.blok-form-zak {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 500px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: rgba(229, 229, 229, 0.85);
+  color: #555;
+}
+
+.blok-form-zak h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  padding: 30px 0 0;
+  color: #555;
+}
+
+.blok-form-zak p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.blok-form-zak label > input,
+.blok-form-zak textarea {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 15px;
+  background: transparent;
+  border: #000014 1px solid;
+  font-size: 16px;
+  padding: 5px 20px;
+  color: rgba(0, 0, 20, 0.6);
+  outline: none;
+}
+
+.blok-form-zak label > input::-webkit-input-placeholder,
+.blok-form-zak textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 20, 0.6);
+}
+
+.blok-form-zak label > input:-ms-input-placeholder,
+.blok-form-zak textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 20, 0.6);
+}
+
+.blok-form-zak label > input::-ms-input-placeholder,
+.blok-form-zak textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 20, 0.6);
+}
+
+.blok-form-zak label > input::placeholder,
+.blok-form-zak textarea::placeholder {
+  color: rgba(0, 0, 20, 0.6);
+}
+
+.blok-form-zak label > input:focus,
+.blok-form-zak textarea:focus {
+  background-color: #f5f5f5;
+}
+
+.blok-form-zak .btn-form {
+  display: block;
+  background-color: #ff8040;
+  margin: 0px auto 20px;
+  border-bottom: #f45000 4px solid;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.blok-form-zak .btn-form:hover {
+  cursor: pointer;
+  color: #000;
+  -webkit-box-shadow: 0px 2px 0px #ec4d00;
+          box-shadow: 0px 2px 0px #ec4d00;
+}
+
+.blok-form-zak #f-x {
+  position: absolute;
+  top: 0%;
+  right: -3%;
+  font-size: 25px;
+  color: #f5f5f5;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.blok-form-zak #f-x:hover {
+  opacity: 1;
+  color: #f5f5f5;
+}
+
+@media only screen and (max-width: 790px) {
+  .blok-form-zak h2 {
+    padding: 40px 0 30px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .blok-form-zak {
+    width: 80%;
+    height: 90%;
+  }
+}
+
 @media only screen and (max-width: 1330px) {
   .lain-top .fa-bars {
     display: block;
@@ -1384,6 +1509,9 @@ map-sklad2 {
   }
   #cont-up .sert .img-sert img {
     width: 70%;
+  }
+  #boss, #boss2 {
+    font-size: 26px;
   }
   #cont-spesh {
     height: 120vh;
@@ -1554,27 +1682,31 @@ map-sklad2 {
   .wrap {
     width: 90%;
   }
+  .lain-top {
+    padding-bottom: 10px;
+  }
   .logo {
     font-size: 30px;
   }
   .phon-top {
-    font-size: 16px;
-    padding-right: 25px;
-    right: 10%;
+    font-size: 20px;
+    padding-right: 30px;
+    right: 15%;
   }
   #loop {
     display: none;
   }
   .lain-top .fa-bars {
     right: -4%;
-    padding-bottom: 5px;
+    font-size: 26px;
+    padding-bottom: 0;
   }
   #leng-top {
-    bottom: -40%;
+    bottom: -80%;
     right: 2%;
   }
   #leng-top a {
-    font-size: 16px;
+    font-size: 14px;
   }
   .cont-canvas {
     display: none;
@@ -1799,6 +1931,9 @@ map-sklad2 {
   .calck-menu .sazL-wrap {
     min-width: 150px;
     left: 40vw;
+  }
+  #boss, #boss2 {
+    font-size: 18px;
   }
 }
 
