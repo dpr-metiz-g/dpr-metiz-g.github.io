@@ -75,6 +75,26 @@ $('.wrapper>h3').click(function() {
     findArticle.slideDown('fast');
   }
 });
+//-----------------accardion 2-----------
+
+
+$('.wrapper .article-b').hide();
+
+$('.wrapper>article>ul>li>b').click(function() { 
+
+  $('.wrapper .article-b').closest('.article-b').slideUp('fast');
+  var findArticleClass = $(this).next();
+ 
+  if  (findArticleClass.is(':visible')){
+    $('.wrapper .article-b').closest('.article-b').slideUp('fast');
+    findArticleClssa.slideDown('fast');
+  } else  {
+    findArticleClass.slideDown('fast');
+  }
+
+
+});
+
 //     menu -------------
   $(".fa-bars").on('click',upMeny);
   function upMeny(){

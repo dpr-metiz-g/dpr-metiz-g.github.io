@@ -98,6 +98,7 @@ $('.saze-wrap').on('click',function(){
    width: "20vw",    //Должно СТАТЬ
    opacity:1
 }, 500);
+
 wHeig_x = $(ulBlock).height();
   if(wHeig < wHeig_x){
     var y =wHeig_x-wHeig ;

@@ -663,7 +663,7 @@ body {
 }
 
 .wrap .h1 .cont-text-heder .btn-prais {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .wrap .h1 .cont-text-heder .text-h2 {
@@ -1420,6 +1420,90 @@ map-sklad2 {
   }
 }
 
+#cont-spesh-ru {
+  height: 850px;
+}
+
+#cont-spesh-ru .mash-grid2 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.wrapper .article-a ul li b {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.wrapper .article-a ul li b:hover {
+  opacity: 1;
+}
+
+.wrapper .article-b ul li a {
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+  #cont-spesh-ru {
+    height: 1600px;
+  }
+  #cont-spesh-ru .mash-grid2 {
+    height: 1500px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-row-gap: 0px;
+  }
+  #cont-spesh-ru .mash-nu-string {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  #cont-spesh-ru .mash-drob {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    margin-top: 20px;
+  }
+  #cont-spesh-ru .mash-drob h2 {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #cont-spesh-ru .text-pr h3 {
+    font-size: 16px;
+  }
+  #cont-spesh-ru .text-e h3 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 388px) {
+  #cont-spesh-ru {
+    height: 1600px;
+  }
+  #cont-spesh-ru .mash-drob {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 348px) {
+  #cont-spesh-ru .mash-drob {
+    margin-top: 60px;
+  }
+}
+
 @media only screen and (max-width: 1330px) {
   .lain-top .fa-bars {
     display: block;
@@ -1512,33 +1596,6 @@ map-sklad2 {
   }
   #boss, #boss2 {
     font-size: 26px;
-  }
-  #cont-spesh {
-    height: 120vh;
-    max-height: 700px;
-  }
-  #cont-spesh .mash-grid2 {
-    height: 120vh;
-    max-height: 680px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-    grid-gap: 0px;
-  }
-  #cont-spesh .mash-nu-string {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-  #cont-spesh .heig {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
   }
   .conteiner-contact {
     height: 600px;

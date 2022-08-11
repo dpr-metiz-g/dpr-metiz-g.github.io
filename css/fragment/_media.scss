@@ -104,27 +104,27 @@
   #boss , #boss2 {
     font-size: 26px;
   }
-  // ---------------------------------------------------
-  #cont-spesh{
-    height: 100vh*1.2;
-    max-height: 700px;
-    .mash-grid2 {
-      height: 100vh*1.2;
-      max-height: 680px;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
-      grid-gap: 0px;
-    }
-    .mash-nu-string{
-      grid-column: 1;
-      grid-row: 1/2;
-    }
-    .heig{
-      grid-column: 1;
-      grid-row: 2/3;
-    }
-  }
-// ------------------------------------------------------
+//   // ---------------------------------------------------
+//   #cont-spesh{
+//     height: 100vh*1.2;
+//     max-height: 700px;
+//     .mash-grid2 {
+//       height: 100vh*1.2;
+//       max-height: 680px;
+//       grid-template-columns: 1fr;
+//       grid-template-rows: auto auto;
+//       grid-gap: 0px;
+//     }
+//     .mash-nu-string{
+//       grid-column: 1;
+//       grid-row: 1/2;
+//     }
+//     .heig{
+//       grid-column: 1;
+//       grid-row: 2/3;
+//     }
+//   }
+// // ------------------------------------------------------
   // -----------contact-------
   .conteiner-contact{
     height: 600px;

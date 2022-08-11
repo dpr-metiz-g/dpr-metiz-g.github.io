@@ -384,7 +384,7 @@ margin-top: 15px;
       font-family: serif;
     } //---------------
     & .btn-prais{
-      margin-top: 15px;
+      margin-top: 30px;
     }
     & .text-h2{
       transform: translateY(200%);
@@ -772,7 +772,7 @@ map-sklad2{
 
 // ------------raznoe----
 
-#cont-spesh {
+#cont-spesh  {
   height: 70vh;
 
   .mash-grid2 {
@@ -1140,10 +1140,82 @@ padding-top: 10px;
   }
 }
 
+//=======plazmatec===========
+#cont-spesh-ru {
+  height: 850px;
+  .mash-grid2 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+.wrapper .article-a ul li b{
+  cursor: pointer;
+  opacity: .7;
 
+  &:hover {
+  opacity: 1;
+    }
+  
+ }
+.wrapper .article-b ul li a{
+  padding-left: 15px;
+}
 
-
-
+@media only screen and (max-width:992px) {
+  
+    #cont-spesh-ru{
+      height: 1600px;
+      .mash-grid2 {
+        height: 1500px;
+          grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 0px;
+      }
+      .mash-nu-string{
+        grid-column: 1;
+        grid-row: 1/2;
+      }
+      .mash-drob{
+        grid-column: 1;
+        grid-row: 2/3;
+        margin-top: 20px;
+        & h2{
+          padding-top: 20px;
+        }
+      }
+    }
+  
+}
+@media only screen and (max-width:520px) {
+  
+  #cont-spesh-ru{
+    & .text-pr h3{
+      font-size: 16px;
+    }
+    .text-e h3{
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (max-width:388px) {
+  #cont-spesh-ru {
+    height: 1600px;
+    .mash-drob{
+      margin-top: 40px;
+    }
+  }
+}
+@media only screen and (max-width:348px) {
+  #cont-spesh-ru {
+    .mash-drob{
+      margin-top: 60px;
+    }
+  }
+}
 
 // =======================================================
 //----------------------------------------------------------------
