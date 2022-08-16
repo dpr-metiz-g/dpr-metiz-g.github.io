@@ -45,21 +45,39 @@ header .invert{
     padding-left: 20px;
     padding-bottom: 10px;
     line-height: 1.2;
+    & b{
+      padding-left: 40px;
+    }
   }
+  & .fa-check{
+    color: #444444;
+    transform: translateX(10px) translateY(0px); 
+  }
+}
+@media only screen and (max-width:821px) {
+  .about-text {  
+    display: block;
+    & img{
+      width: 80%;
+     margin-left: 10%;
+    }
 
+  }
 }
 @media only screen and (max-width:450px) {
   #about h2{
     font-size: 26px ;
     }
+    .about-text > img{  
+      width: 100%;
+      margin-left: 0;
+    }
 }
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:360px) {
   .about-text > p{
     padding-left: 10px;
   }
-  .about-text > img{  
-    width: 260px;
-  }
+
   #about h2{
     font-size: 20px ;
     }

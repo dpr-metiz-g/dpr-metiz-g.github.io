@@ -10,15 +10,7 @@ $(document).ready(function(){
   function doutMeny(){
    $(".min-nav-heder").fadeOut(850);
   }
-//     imput text-------------
-$("#loop").on('click',upText);
-function upText(){
- $(".input-top-wrap").fadeIn(350);
-}
-$(".about-text,.cont-calck").on('click',doutText);
-function doutText(){
- $(".input-top-wrap").fadeOut(350);
-}
+
 
 
   // ---------------------zakaz----------------
@@ -27,7 +19,7 @@ function doutText(){
     $('.s-zakaz').fadeIn(300); 
    });
   
-  $('#x-form').on('click',  function (){
+  $('#f-x').on('click',  function (){
     $('.s-zakaz').fadeOut(300);
    });
 
@@ -134,10 +126,7 @@ $('#stop').on('click',  function (){
 
 
 });
-//-------------------прелоудер ---------------
-$(window).on('load',function(){
-  $(".preloyder").delay(500).fadeOut("slow");
-});
+
 
 
 

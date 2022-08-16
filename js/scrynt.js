@@ -1,66 +1,9 @@
 $(document).ready(function(){
 
-  // рисуем шестигранник
-  function draw1(){
-    let canvas = document.getElementById('canvas1');
-    let ctx = canvas.getContext('2d');
-    ctx.beginPath();
-    ctx.moveTo(10,0);
-    ctx.lineTo(30,0);
-    ctx.lineTo(40,20);
-    ctx.lineTo(30,40);
-    ctx.lineTo(10,40);
-    ctx.lineTo(0,20);
-    ctx.fillStyle = '#f5f5f5';
-    ctx.fill();
-  }  draw1();
 
-  function draw2(){
-    let canvas = document.getElementById('canvas2');
-    let ctx = canvas.getContext('2d');
-    ctx.beginPath();
-    ctx.moveTo(10,0);
-    ctx.lineTo(30,0);
-    ctx.lineTo(40,20);
-    ctx.lineTo(30,40);
-    ctx.lineTo(10,40);
-    ctx.lineTo(0,20);
-    ctx.fillStyle = '#f5f5f5';
-    ctx.fill();
-  }  draw2();
-
-  function draw3(){
-    let canvas = document.getElementById('canvas3');
-    let ctx = canvas.getContext('2d');
-    ctx.beginPath();
-    ctx.moveTo(10,0);
-    ctx.lineTo(30,0);
-    ctx.lineTo(40,20);
-    ctx.lineTo(30,40);
-    ctx.lineTo(10,40);
-    ctx.lineTo(0,20);
-    ctx.fillStyle = '#f5f5f5';
-    ctx.fill();
-  }  draw3();
-  
-  function draw4(){
-    let canvas = document.getElementById('canvas4');
-    let ctx = canvas.getContext('2d');
-    ctx.beginPath();
-    ctx.moveTo(10,0);
-    ctx.lineTo(30,0);
-    ctx.lineTo(40,20);
-    ctx.lineTo(30,40);
-    ctx.lineTo(10,40);
-    ctx.lineTo(0,20);
-    ctx.fillStyle = '#f5f5f5';
-    ctx.fill();
-  }  draw4();
-
-
-//--------    accardion  ----------------
-$('.wrapper>article').not(':first-of-type').hide();
-// $('.wrapper>article').hide();  
+//--------    accardion В ----------------
+$('.wrapper>article').hide();
+ 
   
 $('.wrapper>h3').click(function() {
   
@@ -74,26 +17,55 @@ $('.wrapper>h3').click(function() {
     findWrapper.find('>article').slideUp('fast');
     findArticle.slideDown('fast');
   }
-});
-//-----------------accardion 2-----------
-
-
-$('.wrapper .article-b').hide();
-
-$('.wrapper>article>ul>li>b').click(function() { 
-
-  $('.wrapper .article-b').closest('.article-b').slideUp('fast');
-  var findArticleClass = $(this).next();
+    setTimeout(() => {  //изменяем высоту окна под аккардеон
+      var hAb_1= $('.wrapperA ').height(); 
  
-  if  (findArticleClass.is(':visible')){
-    $('.wrapper .article-b').closest('.article-b').slideUp('fast');
+      $('.cont-mash-bild').animate({
+        'height': hAb_1 + 240
+       } , 400 );
+    }, 200);
+
+});
+//-----------------accardion A-----------
+
+$('.wrapper ').hide();
+
+$('.wrapperA>h2').on('click',function() { 
+
+$('.wrapperA ').addClass('anima-wrapperA');
+
+  $('.wrapper ').slideUp('fast');
+  $('.wrapper > article ').slideUp('fast');
+
+  var findArticleClass = $(this).next();
+  var hA_1= 0;
+  var hAoff_1=0;
+   if  (findArticleClass.is(':visible')){
+    $('.wrapper ').closest('.wrapper').slideUp('fast'); 
+//-------------------
+setTimeout(() => {  //изменяем высоту 
+  hAoff_1 = $('.mash-bild').height(); 
+  $('.cont-mash-bild').animate({
+    'height': hAoff_1 +300
+   } , 800 );
+  
+
+        }, 350); 
+
     findArticleClssa.slideDown('fast');
-  } else  {
+   } else  {
     findArticleClass.slideDown('fast');
   }
 
+    setTimeout(() => {  //изменяем высоту 
+      hA_1 = $('.mash-bild').height(); 
+         $('.cont-mash-bild').animate({
+        'height': hA_1 +260
+       } , 400 );
+    }, 350); 
 
 });
+
 
 //     menu -------------
   $(".fa-bars").on('click',upMeny);
@@ -107,15 +79,8 @@ $('.wrapper>article>ul>li>b').click(function() {
   function doutMeny(){
    $(".min-nav-heder").fadeOut(850);
   }
-//     imput text-------------
-$("#loop").on('click',upText);
-function upText(){
- $(".input-top-wrap").fadeIn(250);
-}
-$(".cont-text-heder").on('click',doutText);
-function doutText(){
- $(".input-top-wrap").fadeOut(350);
-}
+
+
   // --------------map------------
 
   $('.b1').on('click',upSert);
@@ -139,11 +104,11 @@ function doutText(){
   // ---------------------zakaz----------------
 
   $('.btn-prais , .btn-footer').on('click', function() {
-    $('.s-zakaz').fadeIn(300); 
+    $('.s-zakaz').fadeIn(200); 
    });
   
   $('#x-form,#f-x').on('click',  function (){
-    $('.s-zakaz').fadeOut(300);
+    $('.s-zakaz').fadeOut();
    });
 // // ------------------------
 

@@ -980,7 +980,7 @@
                 <li class="gost"></li>
                 <li class="gost"></li>
               </div>
-
+  
 
             </div>
             <form id="formCalk" class="blok-form">
@@ -1014,16 +1014,33 @@
   </footer>
   <div class="s-zakaz">
     <a name='zakaz'></a>
-  <div class="wind-zakaz sert">
-    <i class="fa fa-times" id="x-form" aria-hidden="true"></i>
-      <h2 >Відправити заявку</h2>
-  
- 
-     <p> Ми раді надати Вам вичерпну інформацію  <span>щодо позицій, що цікавлять, заповніть форму  </span> і ми зв'яжемося з вами найближчим часом. </p>
+    <div class="wind-zakaz sert">
+      <form id="callback" class=" form-fon">
+        <div class="blok-form-zak ">
+          <a href="#"><i class="fa fa-times " id="f-x" aria-hidden="true"></i></a>
+          <h2>Надіслати заявку</h2>
+          <p> Ми раді надати Вам вичерпну інформацію щодо позицій, що цікавлять. </p>
+          <label>
+            <input type="text" name="Предприятие" placeholder="Название предприятия">
+          </label>
+          <label>
+            <input type="text" name="Имя" placeholder="Ваше имя" required>
+          </label>
+          <label>
+            <input type="text" name="Телефон" placeholder="Ваш телефон" required>
+          </label>
+          <label>
+            <input type="text" name="Ваш e-mail" placeholder="Ваш e-mail" required>
+          </label>
+          <label>
+            <textarea name="Сообшение" placeholder=" Ваше сообщение" rows=5 required></textarea>
+          </label>
+          <button class="btn-zakaz btn btn-form" name="отправить заявку окно" type="submit">відправити заявку</button>
+        </div>
+      </form>
 
-    <iframe id="zak" src="https://docs.google.com/forms/d/e/1FAIpQLSfWtAQ3cFIyRF22AKp-Pv7Kguv9wB7yH1KdE5VQyrFs4ZDq8Q/viewform?embedded=true"     frameborder="0" marginheight="0" marginwidth="0" >Загрузка…</iframe>
+    </div>
   </div>
-</div>
 
   <script src="../js/JQuery/jquery-3.3.1.min.js"></script>
   <script src="../js/about.js"></script>
