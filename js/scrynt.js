@@ -21,7 +21,7 @@ $('.wrapper>h3').click(function() {
       var hAb_1= $('.wrapperA ').height(); 
  
       $('.cont-mash-bild').animate({
-        'height': hAb_1 + 240
+        'height': hAb_1 + 280
        } , 400 );
     }, 200);
 
@@ -46,7 +46,7 @@ $('.wrapperA ').addClass('anima-wrapperA');
 setTimeout(() => {  //изменяем высоту 
   hAoff_1 = $('.mash-bild').height(); 
   $('.cont-mash-bild').animate({
-    'height': hAoff_1 +300
+    'height': hAoff_1 +280
    } , 800 );
   
 
@@ -60,7 +60,7 @@ setTimeout(() => {  //изменяем высоту
     setTimeout(() => {  //изменяем высоту 
       hA_1 = $('.mash-bild').height(); 
          $('.cont-mash-bild').animate({
-        'height': hA_1 +260
+        'height': hA_1 +280
        } , 400 );
     }, 350); 
 
