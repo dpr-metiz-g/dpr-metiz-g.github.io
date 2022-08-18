@@ -174,14 +174,7 @@
       margin-top: 15px;
     }
   }
-
-
- 
-  // -----------main-------------
-
 // -------sertificet-------
-
-
 
 #cont-up .sert {
   & .img-sert {
@@ -189,6 +182,42 @@
     & img{
       width: 80%;
     }
+  }
+}
+// ----------calk------------------
+#formCalk{
+  text-align: right;
+  .centr-wrap,.bat{
+    display: block;
+  }
+  .bat{
+    right: 50px;
+    margin-top: 20px;
+  }
+  .inpu-wrap{
+    width: 202px;
+    margin-right: 20px;
+  }
+  .rad-wrap{
+    text-align: right;
+  }
+}
+.calck-menu{
+  .c-menu-wrap{
+    width:30vw;
+    left: 0px;
+  }
+  .gost-wrap{
+    min-width:150px;
+     left: 30vw;
+  }
+  .saze-wrap{
+    min-width:150px;
+    left:30vw;
+   }
+  .sazL-wrap{
+    min-width:150px;
+    left: 30vw;
   }
 }
 
@@ -253,42 +282,7 @@
   .fa-map-marker , .fa-mobile ,.fa-phone ,.fa-envelope-o{
     display: none;
   }
-// ----------calk------------------
-#formCalk{
-  text-align: right;
-  .centr-wrap,.bat{
-    display: block;
-  }
-  .bat{
-    right: 50px;
-    margin-top: 20px;
-  }
-  .inpu-wrap{
-    width: 202px;
-    margin-right: 20px;
-  }
-  .rad-wrap{
-    text-align: right;
-  }
-}
-.calck-menu{
-  .c-menu-wrap{
-    width:30vw;
-    left: 0px;
-  }
-  .gost-wrap{
-    min-width:150px;
-     left: 30vw;
-  }
-  .saze-wrap{
-    min-width:150px;
-    left:30vw;
-   }
-  .sazL-wrap{
-    min-width:150px;
-    left: 30vw;
-  }
-}
+
 }
 @media only screen and (max-width:520px){
 
@@ -404,14 +398,27 @@
 // --------------calk--------------
 .cont-calck{
   height: 100vh;
-  min-height: 750px;
+  min-height: 850px;
+  & h2{
+    font-size: 26px;
+  }
+  .cont-wind,.wind-calck{
+    height: 150px;
+    opacity: .8;
+  }  
+}
+#rezul{
+  font-size: 36px;
+}
+#number{
+  margin-left: -5px;
 }
 #formCalk{
   text-align: center;
   padding-top: 260px;
-  padding-left: 20px;
+
   .bat{
-    right: 25%;
+    left: 10%;
   }
   .inpu-wrap{
     width: 202px;
@@ -422,22 +429,23 @@
   }
 }
   .calck-menu{
-    margin-left: 10%;
+    margin-left: 0%; 
+
     .c-menu-wrap{
-      width:40vw;
+      width:45vw;
       left: 0px;
     }
     .gost-wrap{
-      min-width:150px;
-       left: 40vw;
+      width:40vh;
+       left: 45vw;
     }
     .saze-wrap{
-      min-width:150px;
-      left:40vw;
+      width:40vh;
+      left: 45vw;
      }
     .sazL-wrap{
-      min-width:150px;
-      left: 40vw;
+     width:40vh;
+      left: 45vw;
     }
   }
   // ----map---------
@@ -524,5 +532,10 @@
 }
 .btn-footer{
   display: none;
+}
+//----calkulator-
+.wind-calck{
+  min-width: 100%;
+  font-size: 26px;
 }
 }

@@ -48,6 +48,7 @@ $('#app').on('click', function (){
         $('#rezul').text(rezultat+' шт');
       }
     }
+    $(window).scrollTop(100); 
  });
 // для округления чисел
  Number.prototype.Crop = function (x){
@@ -94,7 +95,7 @@ $('.saze-wrap').on('click',function(){
 wHeig_x = $(ulBlock).height();
   if(wHeig < wHeig_x){
     var y =wHeig_x-wHeig ;
-  $('.cont-calck').height(wH+y+100);  //увеличиваем экран под блок
+  $('.cont-calck').height(wH+y+40);  //увеличиваем экран под блок
   }    
 });
 //выберает по клику вес 1 шт
@@ -110,6 +111,7 @@ $('.sazeL').on('click',  function (){
    $('.cont-calck').height(wH+150);
    $('#rezul').text(rezul +' кг в 1 шт');
    $('.gost-wrap,.saze-wrap,.sazL-wrap').fadeOut(500);
+   
  });
 //очищает
 $('#stop').on('click',  function (){

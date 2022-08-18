@@ -91,6 +91,10 @@ header .invert .lain-top .nav-heder {
   }
 }
 
+.conteiner-futer-pages {
+  min-height: 20vh;
+}
+
 .conteiner-futer {
   background-color: rgba(0, 0, 12, 0.8);
 }
@@ -101,7 +105,7 @@ header .invert .lain-top .nav-heder {
 
 .cont-calck {
   position: relative;
-  height: 85vh;
+  height: 65vh;
   max-height: 1750px;
   text-align: center;
 }
@@ -111,7 +115,7 @@ header .invert .lain-top .nav-heder {
   font-weight: bold;
   color: #000014;
   font-size: 34px;
-  padding: 60px 0px 20px;
+  padding: 40px 0px 20px;
 }
 
 .cont-wind {
@@ -128,7 +132,7 @@ header .invert .lain-top .nav-heder {
   min-width: 300px;
   height: 0px;
   margin: auto;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   opacity: 0;
 }
 
@@ -240,6 +244,11 @@ header .invert .lain-top .nav-heder {
           box-shadow: 0px 2px 0px #000014;
 }
 
+#number {
+  text-align: center;
+  font-size: 18px;
+}
+
 #formCalk {
   text-align: center;
   padding-bottom: 60px;
@@ -266,6 +275,7 @@ header .invert .lain-top .nav-heder {
 
 #formCalk .inpu-wrap #number {
   height: 50px;
+  width: 100%;
   background-color: #f7f7f7;
   margin-top: 10px;
 }
@@ -1328,6 +1338,39 @@ map-sklad2 {
   #cont-up .sert .img-sert img {
     width: 80%;
   }
+  #formCalk {
+    text-align: right;
+  }
+  #formCalk .centr-wrap, #formCalk .bat {
+    display: block;
+  }
+  #formCalk .bat {
+    right: 50px;
+    margin-top: 20px;
+  }
+  #formCalk .inpu-wrap {
+    width: 202px;
+    margin-right: 20px;
+  }
+  #formCalk .rad-wrap {
+    text-align: right;
+  }
+  .calck-menu .c-menu-wrap {
+    width: 30vw;
+    left: 0px;
+  }
+  .calck-menu .gost-wrap {
+    min-width: 150px;
+    left: 30vw;
+  }
+  .calck-menu .saze-wrap {
+    min-width: 150px;
+    left: 30vw;
+  }
+  .calck-menu .sazL-wrap {
+    min-width: 150px;
+    left: 30vw;
+  }
 }
 
 @media only screen and (max-width: 610px) {
@@ -1379,39 +1422,6 @@ map-sklad2 {
   }
   .fa-map-marker, .fa-mobile, .fa-phone, .fa-envelope-o {
     display: none;
-  }
-  #formCalk {
-    text-align: right;
-  }
-  #formCalk .centr-wrap, #formCalk .bat {
-    display: block;
-  }
-  #formCalk .bat {
-    right: 50px;
-    margin-top: 20px;
-  }
-  #formCalk .inpu-wrap {
-    width: 202px;
-    margin-right: 20px;
-  }
-  #formCalk .rad-wrap {
-    text-align: right;
-  }
-  .calck-menu .c-menu-wrap {
-    width: 30vw;
-    left: 0px;
-  }
-  .calck-menu .gost-wrap {
-    min-width: 150px;
-    left: 30vw;
-  }
-  .calck-menu .saze-wrap {
-    min-width: 150px;
-    left: 30vw;
-  }
-  .calck-menu .sazL-wrap {
-    min-width: 150px;
-    left: 30vw;
   }
 }
 
@@ -1545,15 +1555,27 @@ map-sklad2 {
   }
   .cont-calck {
     height: 100vh;
-    min-height: 750px;
+    min-height: 850px;
+  }
+  .cont-calck h2 {
+    font-size: 26px;
+  }
+  .cont-calck .cont-wind, .cont-calck .wind-calck {
+    height: 150px;
+    opacity: .8;
+  }
+  #rezul {
+    font-size: 36px;
+  }
+  #number {
+    margin-left: -5px;
   }
   #formCalk {
     text-align: center;
     padding-top: 260px;
-    padding-left: 20px;
   }
   #formCalk .bat {
-    right: 25%;
+    left: 10%;
   }
   #formCalk .inpu-wrap {
     width: 202px;
@@ -1563,23 +1585,23 @@ map-sklad2 {
     text-align: center;
   }
   .calck-menu {
-    margin-left: 10%;
+    margin-left: 0%;
   }
   .calck-menu .c-menu-wrap {
-    width: 40vw;
+    width: 45vw;
     left: 0px;
   }
   .calck-menu .gost-wrap {
-    min-width: 150px;
-    left: 40vw;
+    width: 40vh;
+    left: 45vw;
   }
   .calck-menu .saze-wrap {
-    min-width: 150px;
-    left: 40vw;
+    width: 40vh;
+    left: 45vw;
   }
   .calck-menu .sazL-wrap {
-    min-width: 150px;
-    left: 40vw;
+    width: 40vh;
+    left: 45vw;
   }
   #boss, #boss2 {
     font-size: 18px;
@@ -1666,6 +1688,10 @@ map-sklad2 {
   }
   .btn-footer {
     display: none;
+  }
+  .wind-calck {
+    min-width: 100%;
+    font-size: 26px;
   }
 }
 /*# sourceMappingURL=style.css.map */
