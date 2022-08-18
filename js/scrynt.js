@@ -79,7 +79,7 @@ setTimeout(() => {  //изменяем высоту
    $(".min-nav-heder").fadeOut(850);
   }
 $('.min-nav-heder >a').click(function(){
-  $(".min-nav-heder").fadeOut(850);
+  $(".min-nav-heder").fadeOut(350);
 });
 
   // --------------map------------
