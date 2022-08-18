@@ -2,7 +2,7 @@ $(document).ready(function(){
   //     menu -------------
   $(".fa-bars").on('click',upMeny);
   function upMeny(){
-   $(".min-nav-heder").fadeIn(350).hover(maiMeny,doutMeny);
+   $(".min-nav-heder").fadeToggle(200).hover(maiMeny,doutMeny);
   }
   function maiMeny() {
     $(".min-nav-heder").css({"transform":"scale(1.2)", 'transition': 'all .45s ease'});
@@ -11,7 +11,9 @@ $(document).ready(function(){
    $(".min-nav-heder").fadeOut(850);
   }
 
-
+  $('.min-nav-heder >a').click(function(){
+    $(".min-nav-heder").fadeOut(850);
+  });
 
   // ---------------------zakaz----------------
 
