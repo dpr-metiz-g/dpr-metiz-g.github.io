@@ -305,6 +305,10 @@ body {
   font-weight: 200;
 }
 
+#img-f {
+  display: none;
+}
+
 .preloyder {
   position: fixed;
   top: 0;

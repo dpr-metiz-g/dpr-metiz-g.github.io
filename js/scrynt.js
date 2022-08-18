@@ -76,7 +76,7 @@ setTimeout(() => {  //изменяем высоту
      $(".min-nav-heder").css({"transform":"scale(1.2)", 'transition': 'all .45s ease'});
   }
   function doutMeny(){
-   $(".min-nav-heder").fadeOut(850);
+   $(".min-nav-heder").fadeOut(350);
   }
 $('.min-nav-heder >a').click(function(){
   $(".min-nav-heder").fadeOut(350);
