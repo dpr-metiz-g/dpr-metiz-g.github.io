@@ -27,7 +27,7 @@ header .invert .lain-top .nav-heder {
   text-transform: uppercase;
   font-weight: bold;
   color: #000014;
-  font-size: 34px;
+  font-size: 32px;
   padding: 30px 30px 20px;
   white-space: nowrap;
 }
@@ -87,7 +87,7 @@ header .invert .lain-top .nav-heder {
     padding-left: 10px;
   }
   #about h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -114,7 +114,7 @@ header .invert .lain-top .nav-heder {
   text-transform: uppercase;
   font-weight: bold;
   color: #000014;
-  font-size: 34px;
+  font-size: 32px;
   padding: 40px 0px 20px;
 }
 
@@ -303,10 +303,6 @@ body {
   font-family: Arial, Tahoma, san-serif;
   font-size: 16px;
   font-weight: 200;
-}
-
-#img-f {
-  display: none;
 }
 
 .preloyder {
@@ -1021,7 +1017,7 @@ map-sklad2 {
 .fa-fw {
   margin: 0;
   padding: 0;
-  left: 15%;
+  left: 13%;
   color: #f5f5f5;
   opacity: .6;
   -webkit-transform: translateX(-36px) translateY(2px);
@@ -1187,6 +1183,9 @@ map-sklad2 {
 @media only screen and (max-width: 1330px) {
   .lain-top .fa-bars {
     display: block;
+  }
+  .conteiner-futer .nav-footer {
+    left: 12%;
   }
 }
 
@@ -1616,6 +1615,9 @@ map-sklad2 {
   }
   .btn-footer {
     padding: 10px 15px;
+  }
+  .logo-m {
+    font-size: 18px;
   }
 }
 

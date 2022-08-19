@@ -4,6 +4,9 @@
   .lain-top .fa-bars {
     display: block;
   }
+  .conteiner-futer .nav-footer{
+    left: 12%;
+  }
 }
 
 @media only screen and (max-width:1200px) {
@@ -463,6 +466,10 @@
 .btn-footer{
   padding: 10px 15px;
 }
+
+.logo-m {
+  font-size: 18px;
+ }
 }
 @media only screen and(max-width:320px) {
   .wrap{
