@@ -6,12 +6,18 @@ header .invert .lain-top {
   position: relative;
   width: 100%;
   height: 15vh;
+  padding-bottom: 5px;
   color: #f5f5f5;
   background-color: rgba(0, 0, 12, 0.8);
 }
 
 header .invert .lain-top .nav-heder {
   white-space: nowrap;
+}
+
+#logo-about-top {
+  text-decoration: none;
+  color: #f5f5f5;
 }
 
 .s-about, .s-boltMash1 {
@@ -106,6 +112,7 @@ header .invert .lain-top .nav-heder {
 .cont-calck {
   position: relative;
   height: 65vh;
+  min-height: 380px;
   max-height: 1750px;
   text-align: center;
 }
@@ -303,6 +310,7 @@ body {
   font-family: Arial, Tahoma, san-serif;
   font-size: 16px;
   font-weight: 200;
+  background-color: #00000f;
 }
 
 .preloyder {
@@ -1340,6 +1348,9 @@ map-sklad2 {
   }
   #cont-up .sert .img-sert img {
     width: 80%;
+  }
+  .cont-calck {
+    min-height: 470px;
   }
   #formCalk {
     text-align: right;
