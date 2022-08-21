@@ -902,8 +902,21 @@ map-sklad2 {
 }
 
 .conteiner-contact {
+  position: relative;
   height: 80vh;
   background-color: rgba(0, 0, 15, 0.85);
+}
+
+.conteiner-contact::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  background-size: cover;
+  z-index: -1;
 }
 
 .conteiner-contact h2 {
