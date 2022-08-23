@@ -625,7 +625,6 @@ padding-top: 10px;
   position: relative;
   height: 80vh;
   background-color: rgba(0, 0, 15, .85);
-
   &::after {
     content: '';
     position: absolute;
@@ -649,18 +648,16 @@ padding-top: 10px;
 
 .cont-contact-grid {
   width: 100%;
-  height: auto;
+  height:70vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 30px;
-  margin-top: 20px;
-
-
+  margin-top:-20px;
+  align-content:center ;
 
   .text-contact {
     font-size: 16px;
     display: grid;
-     // grid-template-rows: auto auto auto;
     padding-left: 15px;
     color: $col-w;
     line-height: 1.5;
@@ -695,11 +692,12 @@ padding-top: 10px;
     padding-left: 14%; 
     color: $col-w;
     line-height: 1.5;
-
+ 
 
     .sclad {
       display: grid;
       grid-template-columns: 1fr 1fr;
+
       .sclad-text  {
         grid-column: 1/2;
       }
@@ -709,7 +707,6 @@ padding-top: 10px;
         display: inline-block;
         align-self:start;
         justify-self: end; 
-  
         .b1{
           margin: 15px 0; 
          }
@@ -721,7 +718,6 @@ padding-top: 10px;
       & .sclad2{
         display: grid;
         grid-template-columns: 1fr 1fr;
-  
         & .sclad-text2 {
           grid-column: 1/2;
  

@@ -90,11 +90,13 @@
    height: 700px;
 
     .cont-contact-grid{
+      height: auto;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
       grid-gap: 15px;
-
+      margin-top:30px;
+      align-content:start ;
 
       .text-contact{
         display: grid;
