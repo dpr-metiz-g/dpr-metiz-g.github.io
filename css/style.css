@@ -1266,9 +1266,6 @@ map-sklad2 {
   #cont-up .sert .img-sert img {
     width: 70%;
   }
-  #boss, #boss2 {
-    font-size: 26px;
-  }
   .conteiner-contact {
     height: 700px;
   }
@@ -1636,8 +1633,8 @@ map-sklad2 {
     width: 40vh;
     left: 45vw;
   }
-  #boss, #boss2 {
-    font-size: 18px;
+  .sert .img-sert #boss, .sert .img-sert #boss2 {
+    font-size: 26px;
   }
   .sert .img-sert #x-sertf, .sert .img-sert #x-sertf2 {
     top: 2%;
