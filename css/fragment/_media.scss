@@ -56,6 +56,9 @@
     padding-right: 20px;
     right: 15%;
   }
+  .lain-top .fa-bars {
+    right: 5%;
+  }
 
   .text-heder {
     width: 100%;
@@ -120,15 +123,21 @@
       }
     }
   }
-  .f{
-     color: $col-w;
-    opacity: .6;
-    transform: translateX(50vw) translateY(2px); 
-  }
   .fa-fw {
     left: 0%;
   }
+  .f{
+     color: $col-w;
+    opacity: .6;
+    transform: translateX(53vw) translateY(2px);
+  }
 
+
+}
+@media screen and (max-width:890px) {
+  .ofis-fon .f{
+   transform: translateX(50vw);
+  }
 }
 @media only screen and (max-width:790px){
 
@@ -145,6 +154,9 @@
       font-size: 16px;
     }
   }
+  .ofis-fon .f{
+    transform: translateX(47vw);
+   }
     //----------zakaz---------
     .wind-zakaz{
       & p {
@@ -228,14 +240,19 @@
 }
 
 }
-
+@media only screen and (max-width:670px) {
+  .ofis-fon .f{
+    transform: translateX(43vw);
+   }
+}
 @media only screen and (max-width:610px) {
-  .wrap{
+  .wrap {
     width: 90%;
-  }
-  .lain-top{
-    padding-bottom: 10px;
-  }
+    & .wrap-top{
+      word-wrap: 90%; 
+      margin: 0 5%;
+    }
+ }
   .logo {
     font-size: 30px;
   }
@@ -246,21 +263,19 @@
   }
 
   .lain-top .fa-bars {
-    right: -4%;
-    font-size: 26px;
-    padding-bottom: 0;
+    right: 10%;
+    font-size: 22px;
+   
   }
   #leng-top{
-    bottom: -80%;
-    right: 2%;
+    bottom: -30%;
+    right: 10%;
     & a{
     font-size: 14px;
     }    
   }
   
-    .cont-canvas {
-      display: none;
-    }
+
   .wrap .h1 .cont-text-heder {
     // padding-top: 30%;
     width: 100%;

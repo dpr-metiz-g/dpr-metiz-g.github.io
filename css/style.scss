@@ -93,15 +93,21 @@ body {
   color: #f5f5f5;
   background-color: rgba(0, 0, 12, 0.6);
   z-index: 3;
+
 }
-
-
+.wrap-top{
+  position: relative;
+  width: 80%;
+  height: 15vh;
+  margin: 0 10% ;
+  display: grid;
+  align-items: center;
+}
 
 
 .logo {
   position: absolute;
-  bottom: 20%;
-   font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 32px;
   color: $col-w;
    z-index: 5;
@@ -116,22 +122,21 @@ body {
 
 .phon-top {
   position: absolute;
-  bottom: 27%;
   right: 10%;
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
+
 }
 
 .lain-top .fa-bars {
-  display:block;
+ 
   position: absolute;
-  bottom: 35%;
-  right: 0%;
-  padding: 5px 10px;
+  right: 3%;
   color: $col-w;
   opacity: .8;
   font-size: 25px;
-
+  transform: none;
+  margin-top: -13px;
   &:hover {
     opacity: 1;
   }
@@ -140,10 +145,7 @@ body {
 #leng-top{
   display:block;
   position: absolute;
-  bottom: 25%;
   right: -5%;
-  padding: 5px 10px;
-
   & a {
   color: $col-w;
   opacity: .8;
@@ -172,7 +174,7 @@ body {
     font-size: 1.2em;
     padding: 0 10px;
     color: $col-w;
-    opacity: .6;
+    opacity: .75;
     transition: opacity .25s ease;
 
     &:hover {
@@ -194,12 +196,7 @@ body {
 }
 
 
-.cont-canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
+
 
 // ------text-heder------------
 
@@ -331,7 +328,7 @@ body {
   width: 100%;
   min-height: 600px;
   height: auto;
-  // background: url("/img/fon-fon3.jpg") center repeat;
+
 
   &::after {
     position: absolute;
@@ -354,7 +351,7 @@ body {
   height: auto;
   display: grid;
   grid-template-columns: 1fr ;
-  // grid-gap: 30px;
+
 
 }
 
@@ -363,7 +360,6 @@ body {
   width: 80%;
   left: 10%;
   height: auto;
-  // grid-column: 1/2;
   position: absolute;
   z-index: 2;
   text-align: center;
@@ -377,7 +373,6 @@ body {
 .wrapperA{
 
   margin-top: 40px;
-  // background   : url(/img/MashKrep2.jpg) no-repeat  50%  50%  / cover ;
   background   : url(/img/fon-gaik.jpg) no-repeat  50%  50%  / cover ;
 
   & h2 {
@@ -389,7 +384,6 @@ body {
     text-transform: uppercase;
     padding: 20px 0 ;
     background-color: rgba($col-t, .7);
-    // background-color: rgba($col-t, .2);
     border-bottom: #f7f7f7 1px solid;
     cursor: pointer;
   }
@@ -453,7 +447,6 @@ body {
   height: 100vh;
   display: flex;
   background-color: rgba(0, 0, 15, 0.7);
-  // background-color: rgba(0, 0, 15, .85);
   background-size: cover;
   z-index: 99;
 
@@ -556,7 +549,6 @@ map-sklad2{
   bottom: 0;
   text-align: center;
   background-color: rgba(0, 0, 12, 0.8);
-  // background-color: rgba(0, 0, 10, .9);
   color: $col-w;
 
   & h3 {
@@ -756,10 +748,14 @@ padding-top: 10px;
   .wrap-footer {
     bottom: 15%;
   }
+
+  .logo-f{
+    bottom: 25%;
+  }
   .nav-footer {
     display: inline-block;
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     left: 15%;
     padding: 5px;
   
