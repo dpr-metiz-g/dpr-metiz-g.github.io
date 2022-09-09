@@ -108,10 +108,13 @@ $('.min-nav-heder >a').click(function(){
     $('.s-zakaz').fadeIn(200); 
    });
   
-  $('#x-form,#f-x').on('click',  function (){
+  $('#f-x').on('click',  function (){
     $('.s-zakaz').fadeOut();
+    $('.note').html('');
+    $(".fields").show();
+
    });
-// // ------------------------
+// ------------------------
 
 //---------slider partner---------
 $('.cont-slid-top').slick({

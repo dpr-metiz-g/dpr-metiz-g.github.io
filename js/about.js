@@ -15,15 +15,7 @@ $(document).ready(function(){
     $(".min-nav-heder").fadeOut(350);
   });
 
-  // ---------------------zakaz----------------
 
-  $('.btn-footer').on('click', function() {
-    $('.s-zakaz').fadeIn(300); 
-   });
-  
-  $('#f-x').on('click',  function (){
-    $('.s-zakaz').fadeOut(300);
-   });
 
 // ----------calckulator----------------------
 
